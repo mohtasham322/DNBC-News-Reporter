@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bootstrap/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="prayer_timing.css">
+    <link rel="stylesheet" href="home_page.css">
+    <link rel="stylesheet" href="h1.css">
+    <link rel="stylesheet" href="h2.css">
+    <title>Prayer Timing</title>
+    <link rel="icon" href="picture folder/logo.png">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container header_items">
+            <div class="dates">
+                <div class="english_date">Thursday 16,2023</div>
+                <div class="islamic_date"><span>Rajab 25,1444 AH</span> </div>
+            </div>
+            <div class="logo_div">
+                <a href="home page.html"><img class="logo_img" src="picture folder/logo.png" alt=""></a>
+            </div>
+            <div class="prayer_timing"><a href=""><span>Prayer Timing</span></a></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg my_navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar_toggler_icon">
+                    <i class="fa fa-bars" style="font-size:36px; color: white;"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse ul_div" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 ">
+                    <li class="nav-items">
+                        <a class="nav-link" href="home_page.html">Home</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="">Politics</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="">Sports</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="">Business</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="">Entertainment</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="">Technology</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="">Health</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="">More</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </nav>
+    <div class="container main-box mt-lg-5 mt-md-3">
+        <div class="row main-row">
+            <div class="col col-lg-5 col-md-10 col-sm-10 col-10  col_1">
+                <span class="select-prayer">Select Prayer</span><br>
+                <select onchange="myFunction()" class="select-input" id="prayer-input" name="prayer">
+                    <option value="Fajr">Fajr</option>
+                    <option value="Zohar">Zohar</option>
+                    <option value="Asr">Asr</option>
+                    <option value="Maghrib">Maghrib</option>
+                    <option value="Isha">Isha</option>
+                </select>
+
+            </div>
+            <div class="col col-lg-5 col-md-10 col-sm-10 col-10  col_2">
+                <span class="select-city">Select city</span><br>
+                <select onchange="myFunction()" class="select-input" id="city-input" name="prayer">
+                    <option value="karachi">Karachi</option>
+                    <option value="lahore">Lahore</option>
+                    <option value="islamabad">Islamabad</option>
+                    <option value="quetta">Quetta</option>
+                    <option value="peshawar">Peshawar</option>
+                </select>
+                <!-- <div class="karachi-prayer-timing-main-div">
+                    <span class="karachi-prayer-timing" id="karachi-fajr">6:00 am</span>
+                    <span class="karachi-prayer-timing" id="karachi-asr">5:15 pm</span>
+                    <span class="karachi-prayer-timing" id="karachi-zohar">1:15pm</span>
+                    <span class="karachi-prayer-timing" id="karachi-maghrib">6:20 pm</span>
+                    <span class="karachi-prayer-timing" id="karachi-isha">8:15 pm</span>
+                </div> -->
+            </div>
+            <div class="col col-lg-10 col-md-10 col-sm-10 col-10 col_3">
+                <span  class="prayer-timing-output" id="prayer_timing_output"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        var karachi_fajr = "6:00 am"
+        document.getElementById("prayer_timing_output").innerHTML = karachi_fajr
+        function myFunction() {
+
+
+            // karachi prayer timing
+            var karachi_fajr = "6:00 am"
+            var karachi_zohar = "1:15 pm"
+            var karachi_asr = "5:15 pm"
+            var karachi_maghrib = "6:15 pm"
+            var karachi_isha = "8:15 pm"
+            // // lahore prayer timing
+            var lahore_fajr = "5:45 am"
+            var lahore_zohar = "1:15 pm"
+            var lahore_asr = "5:00 pm"
+            var lahore_maghrib = "6:05 pm"
+            var lahore_isha = "8:00 pm"
+            // // islamabad prayer timing
+            var islamabad_fajr = "6:10 am"
+            var islamabad_zohar = "1:30 pm"
+            var islamabad_asr = "5:05 pm"
+            var islamabad_maghrib = "6:05 pm"
+            var islamabad_isha = "8:20 pm"
+            // // quetta prayer timing
+            var quetta_fajr = "6:15 am"
+            var quetta_zohar = "1:45 pm"
+            var quetta_asr = "5:10 pm"
+            var quetta_maghrib = "6:25 pm"
+            var quetta_isha = "8:30 pm"
+            // // peshawar prayer timing
+            var peshawar_fajr = "5:55 am"
+            var peshawar_zohar = "1:10 pm"
+            var peshawar_asr = "5:30 pm"
+            var peshawar_maghrib = "6:30 pm"
+            var peshawar_isha = "8:35 pm"
+
+            var city_input = document.getElementById("city-input")
+            var prayer_input = document.getElementById("prayer-input")
+            var prayer_timing_output = document.getElementById("prayer_timing_output")
+
+            if (city_input.value == "karachi" && prayer_input.value == "Fajr") {
+                prayer_timing_output.innerHTML = karachi_fajr
+            }
+            else if (city_input.value == "karachi" && prayer_input.value == "Zohar") {
+                prayer_timing_output.innerHTML = karachi_zohar
+            }
+            else if (city_input.value == "karachi" && prayer_input.value == "Asr") {
+                prayer_timing_output.innerHTML = karachi_asr
+            }
+            else if (city_input.value == "karachi" && prayer_input.value == "Maghrib") {
+                prayer_timing_output.innerHTML = karachi_maghrib
+            }
+            else if (city_input.value == "karachi" && prayer_input.value == "Isha") {
+                prayer_timing_output.innerHTML = karachi_isha
+            }
+            // lahore
+            else if (city_input.value == "lahore" && prayer_input.value == "Fajr") {
+                prayer_timing_output.innerHTML = lahore_fajr
+            }
+            else if (city_input.value == "lahore" && prayer_input.value == "Zohar") {
+                prayer_timing_output.innerHTML = lahore_zohar
+            }
+            else if (city_input.value == "lahore" && prayer_input.value == "Asr") {
+                prayer_timing_output.innerHTML = lahore_asr
+            }
+            else if (city_input.value == "lahore" && prayer_input.value == "Maghrib") {
+                prayer_timing_output.innerHTML = lahore_maghrib
+            }
+            else if (city_input.value == "lahore" && prayer_input.value == "Isha") {
+                prayer_timing_output.innerHTML = lahore_isha
+            }
+            // islamabad
+            else if (city_input.value == "islamabad" && prayer_input.value == "Fajr") {
+                prayer_timing_output.innerHTML = islamabad_fajr
+            }
+            else if (city_input.value == "islamabad" && prayer_input.value == "Zohar") {
+                prayer_timing_output.innerHTML = islamabad_zohar
+            }
+            else if (city_input.value == "islamabad" && prayer_input.value == "Asr") {
+                prayer_timing_output.innerHTML = islamabad_asr
+            }
+            else if (city_input.value == "islamabad" && prayer_input.value == "Maghrib") {
+                prayer_timing_output.innerHTML = islamabad_maghrib
+            }
+            else if (city_input.value == "islamabad" && prayer_input.value == "Isha") {
+                prayer_timing_output.innerHTML = islamabad_isha
+            }
+            // quetta
+            else if (city_input.value == "quetta" && prayer_input.value == "Fajr") {
+                prayer_timing_output.innerHTML = quetta_fajr
+            }
+            else if (city_input.value == "quetta" && prayer_input.value == "Zohar") {
+                prayer_timing_output.innerHTML = quetta_zohar
+            }
+            else if (city_input.value == "quetta" && prayer_input.value == "Asr") {
+                prayer_timing_output.innerHTML = quetta_asr
+            }
+            else if (city_input.value == "quetta" && prayer_input.value == "Maghrib") {
+                prayer_timing_output.innerHTML = quetta_maghrib
+            }
+            else if (city_input.value == "quetta" && prayer_input.value == "Isha") {
+                prayer_timing_output.innerHTML = quetta_isha
+            }
+            // peshawar
+            else if (city_input.value == "peshawar" && prayer_input.value == "Fajr") {
+                prayer_timing_output.innerHTML = peshawar_fajr
+            }
+            else if (city_input.value == "peshawar" && prayer_input.value == "Zohar") {
+                prayer_timing_output.innerHTML = peshawar_zohar
+            }
+            else if (city_input.value == "peshawar" && prayer_input.value == "Asr") {
+                prayer_timing_output.innerHTML = peshawar_asr
+            }
+            else if (city_input.value == "peshawar" && prayer_input.value == "Maghrib") {
+                prayer_timing_output.innerHTML = peshawar_maghrib
+            }
+            else if (city_input.value == "peshawar" && prayer_input.value == "Isha") {
+                prayer_timing_output.innerHTML = peshawar_isha
+            }
+
+
+            else {
+                prayer_timing_output.innerHTML = "none"
+            }
+        }
+    </script>
+</body>
+
+</html>

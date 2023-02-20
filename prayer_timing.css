@@ -1,0 +1,67 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main-box{
+    padding: auto;
+
+}
+
+.select-input{
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.col_1{
+    background-color: rgb(33 133 181);
+    padding: 2%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.col_2{
+    background-color: rgb(33 133 181);
+    padding: 2%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.col_3{
+    background-color: rgb(33 133 181);
+    padding: 2%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.select-prayer{
+    font-size: 35px;
+    font-weight: bold;
+}
+.select-city{
+    font-size: 35px;
+    font-weight: bold;
+}
+.main-row{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(72, 72, 72);
+    padding: 50px 30px;
+    /* flex-direction: column; */
+}
+.prayer-timing-output{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.timing-output{
+    background-color: rgb(183, 183, 183);
+    padding: 2%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* .karachi-prayer-timing-main-div{
+    display: none;
+} */
