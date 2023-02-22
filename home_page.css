@@ -38,6 +38,7 @@ body{
     background-color: black;
     margin-top: 5px;
     position: sticky;
+    z-index: 9;
     top: 0;
 }
 .ul_div{
@@ -57,9 +58,9 @@ body{
 
 }
 
-.headlines_img:hover{
+/* .headlines_img:hover{
     filter: blur(0.5);
-}
+} */
 /* .navbar_toggler_icon{
     background-color: white;
     color: rgb(255, 255, 255);
@@ -99,6 +100,28 @@ body{
     font-size: 20px;
     color: black;
 }
+ /* .headlines_img{
+    transform: scale(01);
+    transition: 0.3s ease-in-out;
+
+    height: auto;
+    overflow: hidden;
+
+}
+.div_with_hover_img{
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.div_with_hover_img:hover img{
+    transform: scale(1.1);
+} */
+
+
+
+/* .headlines_img:hover{
+    filter: contrast(70%);
+} */
 
 .medium_mini_headlines{
     font-size: 17px;
@@ -113,5 +136,15 @@ body{
     width: 150px !important;
     margin-right: 20px;
 }
+.news_space_between{
+    display: flex;
+    justify-content: space-between;
+}
 
+.magazines_col{
+    background-color: rgb(231, 231, 231);
+    padding: 50px 20px;
+    text-align: center;
+    height: fit-content;
+}
 
