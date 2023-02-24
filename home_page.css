@@ -225,6 +225,9 @@ body {
     margin: -140px auto 20%;
     background-color: white;
 }
+.magazines_col{
+    background-color: rgb(170, 170, 170);
+}
 
 @media screen and (min-width:320px) and (max-width:550px) {
     .main_banner_heading {
