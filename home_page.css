@@ -8,6 +8,20 @@ body {
     height: 100px;
 }
 
+@media screen and (min-width:320px) and (max-width:500px) {
+    .logo_img{
+        width: 130px;
+        height: 90px;
+    }
+    .islamic_date{
+        font-size: 17px;
+    }
+    .english_date{
+        font-size: 17px;
+    }
+    
+}
+
 .dates {
     display: flex;
     flex-direction: column;
@@ -303,6 +317,14 @@ body {
 }
 .magazines_each_col_apart:hover .after_hover_apart{
     top: 0;
+}
+
+
+.custom_dropdown_menu{
+    background-color: white;
+}
+.custom_dropdown_menu li a{
+    color: black !important;
 }
 
 
