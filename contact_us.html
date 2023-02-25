@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/jquery-3.6.3.min.js"></script>
+
+    <style>
+        .form_border{
+            border: 5px solid black;
+            padding: 60px 30px;
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div  class="container form_border" >
+            <div class="row justify-content-center">
+  
+        <div class="mb-3 col-lg-10 ">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3 col-lg-10 ">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password">
+        </div>
+        <div class="mb-3 col-lg-10">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="w3review" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <div class="mb-3 col-10  form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary col-10">send</button>
+    </div>
+    </div>
+      </form>
+
+
+
+
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            var email = document.getElementById("email")
+            var password = document.getElementById("password")
+            var emailpattern
+        </script>
+</body>
+</html>
