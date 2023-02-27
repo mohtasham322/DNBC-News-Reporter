@@ -186,6 +186,24 @@ body {
     background-position: center;
     background-blend-mode: darken;
 }
+.banner_politics {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(45deg, #000000e5, #220000b2), url('picture folder/politics/banner_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.banner_sports {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(45deg, #000000e5, #220000b2), url('picture folder/sports/sports_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+}
 
 .main_banner_heading {
     font-size: 80px;
@@ -236,6 +254,14 @@ body {
 }
 
 .magazines_page_content {
+    margin: -140px auto 20%;
+    background-color: white;
+}
+.politics_page_content {
+    margin: -140px auto 20%;
+    background-color: white;
+}
+.sports_page_content {
     margin: -140px auto 20%;
     background-color: white;
 }
