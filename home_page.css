@@ -370,6 +370,140 @@ body {
 .custom_dropdown_menu li a{
     color: black !important;
 }
+.email_security{
+    font-size: 15px;
+    color: gray;
+}
+.form_background{
+    background-color: rgb(223, 222, 222);
+}
+.form_heading{
+    font-weight: bold;
+    
+}
 
 
+
+.form_heading_div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_send_btn{
+    margin-top: 15px;
+    padding: 5px 25px;
+    background-color: black;
+    color: white;
+}
+.whatsapp-icon{
+    color: white;
+    cursor: pointer;
+}
+.facebook-icon{
+    color: white;
+    cursor: pointer;
+
+}
+.twitter-icon{
+    color: white;
+    cursor: pointer;
+
+}
+.instagram-icon{
+    color: white;
+    cursor: pointer;
+
+}
+.youtube-icon{
+    color: white;
+    cursor: pointer;
+
+}
+.col-whatsapp{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #25D366;
+    height: fit-content;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+
+}
+.col-whatsapp:hover{
+    color: white;
+}
+.col-facebook{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #4267B2;
+    height: fit-content;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+
+}
+.col-facebook:hover{
+    color: white;
+}
+.col-twitter{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #1DA1F2;
+    height: fit-content;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+
+}
+.col-twitter:hover{
+    color: white;
+}
+.col-instagram{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #E1306C;
+    height: fit-content;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+
+}
+.col-instagram:hover{
+    color: white;
+}
+.col-youtube{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #FF0000;
+    height: fit-content;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+
+}
+.col-youtube:hover{
+    color: white;
+}
+.follow_col{
+    text-align: center;
+}
+.follow_col h2{
+    font-weight: bold;
+}
 
