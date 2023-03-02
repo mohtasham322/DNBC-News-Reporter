@@ -507,3 +507,17 @@ body {
     font-weight: bold;
 }
 
+.required_validation{
+    font-size: 13px;
+    color: red;
+}
+#validation1{
+    display: none;
+}
+#validation2{
+    display: none;
+}
+#validation3{
+    display: none;
+}
+

@@ -603,17 +603,20 @@
                     <label for="">Email Address :</label><br>
                     <input class="form-control" type="text" name="" id="form_email" placeholder="email">
                     <span class="email_security">we will never share your email with anyone else</span>
+                    <span class="required_validation" id="validation1">please write your email</span>
                 </div>
                 <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
                     <label for="">Password :</label><br>
                     <input class="form-control" type="password" name="" id="form_password" placeholder="password">
+                    <span class="required_validation" id="validation2">please type password</span>
                 </div>
                 <div class="col col-lg-12 col-md-12 col-sm-12 col-12 pt-3">
                     <label for="">Feedback</label>
-                    <textarea class="form-control" name="" id="" cols="70" rows="7" placeholder="write your feedback"></textarea>
+                    <textarea class="form-control" name="" id="form_feedback" cols="70" rows="7" placeholder="write your feedback"></textarea>
+                    <span class="required_validation" id="validation3">please write your feedback</span>
                 </div>
                 <div class="col col-lg-3 col-md-3 col-sm-3 col-3">
-                    <button class="btn form_send_btn btn-outline-success">Send</button>
+                    <button class="btn form_send_btn btn-outline-success" onclick="btnsend()">Send</button>
                 </div>
             </div>
         </div>
@@ -648,6 +651,23 @@
 
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        function btnsend(){
+            var email_input = document.getElementById("form_email").value
+            var password_input = document.getElementById("form_email").value
+            var feedback_input = document.getElementById("form_email").value
+            if(email_input == "" ){ 
+                document.getElementById("validation1").style.display = 'block'
+            }
+            else if(password_input == "")
+            document.getElementById("validation1").style.display = 'none'
+            document.getElementById("validation2").style.display = 'block'
+            else{
+                alert("sent successfully")
+            }
+        }
+
+    </script>
 </body>
 
 </html>
