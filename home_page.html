@@ -45,32 +45,32 @@
                         <a class="nav-link" href="home_page.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link " href="politics_home.html" >Politics</a>
+                        <a class="nav-link " href="politics_home.html">Politics</a>
 
-                        
+
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link "  href="" >Sports</a>
+                        <a class="nav-link " href="">Sports</a>
 
-                        
+
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link "href="" >Business</a>
+                        <a class="nav-link " href="">Business</a>
 
-                        
+
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link "  href="entertainment_home.html" >Entertainment</a>
+                        <a class="nav-link " href="entertainment_home.html">Entertainment</a>
 
-                        
+
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link " href="" >Technology</a>
+                        <a class="nav-link " href="">Technology</a>
 
-                        
+
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="health_home.html" >Health</a>
+                        <a class="nav-link" href="health_home.html">Health</a>
 
                     </li>
                     <li class="nav-item">
@@ -254,7 +254,8 @@
                     </a>
                     <hr>
                     <div class="row">
-                        <div class="col col-lg-6 col-md-12 col-sm-12 col-12" title="Gold rate increases by Rs2,800 per tola in Pakistan">
+                        <div class="col col-lg-6 col-md-12 col-sm-12 col-12"
+                            title="Gold rate increases by Rs2,800 per tola in Pakistan">
                             <a href=""><img class="w-100 headlines_img"
                                     src="picture folder/headlines/business_gold_rates.jpg" alt=""></a>
                             <a class="home_medium_news" href=""><span>Gold rate increases by Rs2,800 per tola in
@@ -315,7 +316,8 @@
                     </a>
                     <hr>
                     <div class="row">
-                        <div class="col col-lg-6 col-md-12 col-sm-12 col-12" title="Musk fires engineer after his Twitter reach goes down">
+                        <div class="col col-lg-6 col-md-12 col-sm-12 col-12"
+                            title="Musk fires engineer after his Twitter reach goes down">
                             <a href=""><img class="w-100 headlines_img"
                                     src="picture folder/headlines/technology_musk_fire_engineers.webp" alt=""></a>
                             <a class="home_medium_news" href=""><span>Musk fires engineer after his Twitter reach goes
@@ -374,7 +376,8 @@
                     </a>
                     <hr>
                     <div class="row">
-                        <div class="col col-lg-6 col-md-12 col-sm-12 col-12" title="Study shows how UTIs affect women's quality of life">
+                        <div class="col col-lg-6 col-md-12 col-sm-12 col-12"
+                            title="Study shows how UTIs affect women's quality of life">
                             <a href=""><img class="w-100 headlines_img"
                                     src="picture folder/headlines/health_utis_women_life.jpg" alt=""></a>
                             <a class="home_medium_news" href=""><span>Study shows how UTIs affect women's quality of
@@ -593,76 +596,103 @@
 
 
 
-<div class="container">
-    <div class="row">
-        
-        <div class=" col col-lg-8 col-md-8 col-sm-12 col-12  p-5 form_background">
-            <div class="form_heading_div"><h2 class="form_heading">Feedback Form</h2></div><br>
-            <div class="row">
-                <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
-                    <label for="">Email Address :</label><br>
-                    <input class="form-control" type="text" name="" id="form_email" placeholder="email">
-                    <span class="email_security">we will never share your email with anyone else</span>
-                    <span class="required_validation" id="validation1">please write your email</span>
-                </div>
-                <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
-                    <label for="">Password :</label><br>
-                    <input class="form-control" type="password" name="" id="form_password" placeholder="password">
-                    <span class="required_validation" id="validation2">please type password</span>
-                </div>
-                <div class="col col-lg-12 col-md-12 col-sm-12 col-12 pt-3">
-                    <label for="">Feedback</label>
-                    <textarea class="form-control" name="" id="form_feedback" cols="70" rows="7" placeholder="write your feedback"></textarea>
-                    <span class="required_validation" id="validation3">please write your feedback</span>
-                </div>
-                <div class="col col-lg-3 col-md-3 col-sm-3 col-3">
-                    <button class="btn form_send_btn btn-outline-success" onclick="btnsend()">Send</button>
+    <div class="container">
+        <div class="row">
+
+            <div class=" col col-lg-8 col-md-8 col-sm-12 col-12  p-5 form_background">
+                <div class="form_heading_div">
+                    <h2 class="form_heading">Feedback Form</h2>
+                </div><br>
+                <div class="row">
+                    <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+                        <label for="">Email Address :</label><br>
+                        <input class="form-control" type="text" name="" id="form_email" placeholder="email">
+                        <span class="email_security">we will never share your email with anyone else</span>
+                        <span class="required_validation" id="validation1">please write your email</span><br>
+                        <span class="email_expression" id="email_expression_id">please write correct email</span>
+                    </div>
+                    <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+                        <label for="">Password :</label><br>
+                        <input class="form-control" type="password" name="" id="form_password" placeholder="password">
+                        <span class="required_validation" id="validation2">please type password</span>
+                    </div>
+                    <div class="col col-lg-12 col-md-12 col-sm-12 col-12 pt-3">
+                        <label for="">Feedback</label>
+                        <textarea class="form-control" name="" id="form_feedback" cols="70" rows="7"
+                            placeholder="write your feedback"></textarea>
+                        <span class="required_validation" id="validation3">please write your feedback</span>
+                    </div>
+                    <div class="col col-lg-3 col-md-3 col-sm-3 col-3">
+                        <button class="btn form_send_btn btn-outline-success" onclick="btnsend()">Send</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class=" col col-lg-4 col-md-4 col-sm-12 col-12 p-5">
-            <div class="row justify-content-center follow_col">
-                <h2>Follow Us On</h2>
-                <div class="col col-lg-8 col-md-8 col-sm-8 col-8 pt-3">
-                    <a class="col-whatsapp" href=""><i class="fa fa-whatsapp whatsapp-icon" style="font-size:36px"></i>
-                    <div>WhatsApp</div>
-                </div></a>
-                <div class="col col-lg-8 col-md-8 col-sm-8 col-8 pt-3">
-                    <a class="col-facebook" href=""><i class="fa fa-facebook facebook-icon" style="font-size:36px"></i>
-                    <div>Facebook</div>
-                </div></a>
-                <div class="col col-lg-8 col-md-8 col-sm-8 col-8 pt-3">
-                    <a class="col-twitter" href=""><i class="fa fa-twitter twitter-icon" style="font-size:36px"></i>
-                    <div>Twitter</div>
-                </div></a>
-                <div class="col col-lg-8 col-md-8 col-sm-8 col-8 pt-3">
-                    <a class="col-instagram" href=""><i class="fa fa-instagram instagram-icon" style="font-size:36px"></i>
-                    <div>Instagram</div>
-                </div></a>
-                <div class="col col-lg-8 col-md-8 col-sm-8 col-8 pt-3">
-                    <a class="col-youtube" href=""><i class="fa fa-youtube youtube-icon" style="font-size:36px"></i>
-                    <div>Youtube</div>
-                </div></a>
+            <div class=" col col-lg-4 col-md-4 col-sm-12 col-12 p-5">
+                <div class="row justify-content-center follow_col">
+                    <h2>Follow Us On</h2>
+                    <div class="col col-lg-8 col-md-8 col-sm-8 col-8 pt-3">
+                        <a class="col-whatsapp" href=""><i class="fa fa-whatsapp whatsapp-icon"
+                                style="font-size:36px"></i>
+                            <div>WhatsApp</div>
+                    </div></a>
+                    <div class="col col-lg-8 col-md-8 col-sm-8 col-8 pt-3">
+                        <a class="col-facebook" href=""><i class="fa fa-facebook facebook-icon"
+                                style="font-size:36px"></i>
+                            <div>Facebook</div>
+                    </div></a>
+                    <div class="col col-lg-8 col-md-8 col-sm-8 col-8 pt-3">
+                        <a class="col-twitter" href=""><i class="fa fa-twitter twitter-icon" style="font-size:36px"></i>
+                            <div>Twitter</div>
+                    </div></a>
+                    <div class="col col-lg-8 col-md-8 col-sm-8 col-8 pt-3">
+                        <a class="col-instagram" href=""><i class="fa fa-instagram instagram-icon"
+                                style="font-size:36px"></i>
+                            <div>Instagram</div>
+                    </div></a>
+                    <div class="col col-lg-8 col-md-8 col-sm-8 col-8 pt-3">
+                        <a class="col-youtube" href=""><i class="fa fa-youtube youtube-icon" style="font-size:36px"></i>
+                            <div>Youtube</div>
+                    </div></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script>
-        function btnsend(){
+        function btnsend() {
             var email_input = document.getElementById("form_email").value
-            var password_input = document.getElementById("form_email").value
-            var feedback_input = document.getElementById("form_email").value
-            if(email_input == "" ){ 
+            var password_input = document.getElementById("form_password").value
+            var feedback_input = document.getElementById("form_feedback").value
+            var email_input_format = /^[A-z._]{3,}[0-9]{0,}@[A-z]{4,8}.[A-z]{2,4}$/;
+            var check_email_format = email_input_format.test(email_input)
+            
+
+             if (email_input == "") {
                 document.getElementById("validation1").style.display = 'block'
             }
-            else if(password_input == "")
-            document.getElementById("validation1").style.display = 'none'
-            document.getElementById("validation2").style.display = 'block'
-            else{
+            else if(check_email_format = 'false'){
+                document.getElementById("validation1").style.display = 'none'
+                document.getElementById("email_expression_id").style.display = 'block'
+            }
+            else if (password_input == "") {
+                
+                document.getElementById("validation2").style.display = 'block'
+                document.getElementById("validation1").style.display = 'none'
+                document.getElementById("email_expression_id").style.display = 'none'
+            }
+            else if (feedback_input == "") {
+                document.getElementById("validation3").style.display = 'block'
+                document.getElementById("validation2").style.display = 'none'
+            }
+            
+            else  {
+                document.getElementById("email_expression_id").style.display = 'none'
+                document.getElementById("validation1").style.display = 'none'
+                document.getElementById("validation2").style.display = 'none'
+                document.getElementById("validation3").style.display = 'none'
                 alert("sent successfully")
             }
         }

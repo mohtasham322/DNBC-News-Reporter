@@ -508,16 +508,22 @@ body {
 }
 
 .required_validation{
-    font-size: 13px;
+    font-size: 15px;
     color: red;
 }
 #validation1{
-    display: none;
+    display: none ;
 }
 #validation2{
     display: none;
 }
 #validation3{
     display: none;
+}
+
+#email_expression_id{
+    display: none;
+    font-size: 15px;
+    color: red;
 }
 
