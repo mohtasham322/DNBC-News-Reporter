@@ -657,7 +657,34 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid"></div>
+
+
+    <!-- footer -->
+    <div class="container-fluid footer-container pt-5  ">
+        <div class="row footer-row">
+            <div class="col col-lg-4 col-md-4 col-sm-12 col-12 footer-col-logo footer-each-col "><img class="footer-logo" src="picture folder/logo.png" alt=""></div>
+            <div class="col col-lg-4 col-md-4 col-sm-12 col-12 footer-each-col">
+                <span class="footer-navigation-heading">Navigation</span><br><br>
+                <ul class="navigation-items-ul">
+                    <div class="row">
+                    <div class="col">
+                    <li class="footer-navigation-item"><a href="" class="navigation-item-link">Home</a></li>
+                    <li class="footer-navigation-item"><a href="" class="navigation-item-link">Politics</a></li>
+                    <li class="footer-navigation-item"><a href="" class="navigation-item-link">Sports</a></li>
+                    <li class="footer-navigation-item"><a href="" class="navigation-item-link">Business</a></li>
+                </div>
+                <div class="col">
+                    <li class="footer-navigation-item"><a href="" class="navigation-item-link">Entertainment</a></li>
+                    <li class="footer-navigation-item"><a href="" class="navigation-item-link">Technology</a></li>
+                    <li class="footer-navigation-item"><a href="" class="navigation-item-link">Health</a></li>
+                    <li class="footer-navigation-item"><a href="" class="navigation-item-link">Others</a></li>
+                </div>
+            </div>
+                </ul>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-12 col-12 footer-each-col"></div>
+        </div>
+    </div>
 
 
 
@@ -668,15 +695,16 @@
             var password_input = document.getElementById("form_password").value
             var feedback_input = document.getElementById("form_feedback").value
             var email_input_format = /^[A-z._]{3,}[0-9]{0,}@[A-z]{4,8}.[A-z]{2,4}$/;
-            var check_email_format = email_input_format.test(email_input)
+            var check_email_format = email_input_format.test(email_input).value
             
 
              if (email_input == "") {
                 document.getElementById("validation1").style.display = 'block'
             }
-            else if(check_email_format = 'false'){
+            else if(check_email_format == 'false'){
                 document.getElementById("validation1").style.display = 'none'
                 document.getElementById("email_expression_id").style.display = 'block'
+                
             }
             else if (password_input == "") {
                 

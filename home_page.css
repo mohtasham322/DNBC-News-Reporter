@@ -527,3 +527,54 @@ body {
     color: red;
 }
 
+.footer-logo{
+    width: 150px;
+    height: 100px;
+}
+.footer-navigation-heading{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+.footer-navigation-item{
+    list-style: none;
+}
+.navigation-item-link{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navigation-item-link:hover{
+    color: teal;
+}
+.navigation-items-ul{
+    margin-left: -30px;
+}
+.footer-col-logo{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+/* .footer-col-logo img{
+    margin-top: 20px;
+} */
+.footer-row{
+    
+    background-color:lightgray;
+    margin-top: 20px;
+    display: flex;
+    /* padding: 40px; */
+    justify-content: center;
+    align-items: center;
+}
+.footer-each-col{
+    background-color: gray;
+    min-height: 400px;
+    padding-top: 20px;
+}
+/* .footer-container{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
