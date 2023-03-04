@@ -607,9 +607,10 @@
                     <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
                         <label for="">Email Address :</label><br>
                         <input class="form-control" type="text" name="" id="form_email" placeholder="email">
-                        <span class="email_security">we will never share your email with anyone else</span>
-                        <span class="required_validation" id="validation1">please write your email</span><br>
+                        <span class="required_validation" id="validation1">please write your email</span>
                         <span class="email_expression" id="email_expression_id">please write correct email</span>
+                        <span class="email_security">we will never share your email with anyone else</span>
+                        
                     </div>
                     <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
                         <label for="">Password :</label><br>
@@ -695,15 +696,15 @@
             var password_input = document.getElementById("form_password").value
             var feedback_input = document.getElementById("form_feedback").value
             var email_input_format = /^[A-z._]{3,}[0-9]{0,}@[A-z]{4,8}.[A-z]{2,4}$/;
-            var check_email_format = email_input_format.test(email_input).value
+            var check_email_format = email_input_format.test(email_input);
             
 
              if (email_input == "") {
                 document.getElementById("validation1").style.display = 'block'
             }
-            else if(check_email_format == 'false'){
-                document.getElementById("validation1").style.display = 'none'
+            else if(check_email_format == false ){                
                 document.getElementById("email_expression_id").style.display = 'block'
+                document.getElementById("validation1").style.display = 'none'
                 
             }
             else if (password_input == "") {
