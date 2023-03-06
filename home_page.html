@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="bootstrap/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="home_page.css">
     <link rel="stylesheet" href="h2.css">
     <link rel="stylesheet" href="h1.css">
@@ -606,7 +607,7 @@
                 <div class="row">
                     <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
                         <label for="">Email Address :</label><br>
-                        <input class="form-control" type="text" name="" id="form_email" placeholder="email">
+                        <input class="form-control" type="text" name="email" id="form_email" placeholder="email" autocomplete="on" >
                         <span class="required_validation" id="validation1">please write your email</span>
                         <span class="email_expression" id="email_expression_id">please write correct email</span>
                         <span class="email_security">we will never share your email with anyone else</span>
@@ -614,12 +615,12 @@
                     </div>
                     <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
                         <label for="">Password :</label><br>
-                        <input class="form-control" type="password" name="" id="form_password" placeholder="password">
+                        <input class="form-control" type="password" name="password" id="form_password" placeholder="password">
                         <span class="required_validation" id="validation2">please type password</span>
                     </div>
                     <div class="col col-lg-12 col-md-12 col-sm-12 col-12 pt-3">
                         <label for="">Feedback</label>
-                        <textarea class="form-control" name="" id="form_feedback" cols="70" rows="7"
+                        <textarea class="form-control" name="textarea" id="form_feedback" cols="70" rows="7"
                             placeholder="write your feedback"></textarea>
                         <span class="required_validation" id="validation3">please write your feedback</span>
                     </div>
@@ -683,7 +684,17 @@
             </div>
                 </ul>
             </div>
-            <div class="col col-lg-4 col-md-4 col-sm-12 col-12 footer-each-col"></div>
+            <div class="col col-lg-4 col-md-4 col-sm-12 col-12 footer-each-col">
+                <span class="footer-navigation-heading">Follow Us On</span><br><br>
+                <div class="social-icons-div">
+                <a class="social-icons"  href=""><i class="fa fa-facebook-f" id="facebook" style="font-size:36px"></i></a>
+                <a class="social-icons"  href=""><i class="fa fa-whatsapp" id="whatsapp" style="font-size:36px"></i></a>
+                <a class="social-icons"  href=""><i class="fa fa-twitter" id="twitter" style="font-size:36px"></i></a>
+                <a class="social-icons"  href=""><i class="fa fa-instagram" id="instagram" style="font-size:36px"></i></a>
+                <a class="social-icons"  href=""><i class="fa fa-skype" id="skype" style="font-size:36px"></i></a>
+            </div>
+
+            </div>
         </div>
     </div>
 
