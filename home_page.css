@@ -2,6 +2,9 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
 }
+p{
+    font-size: 25px;
+}
 
 .logo_img {
     width: 150px;
@@ -83,16 +86,7 @@ body {
 
 }
 
-/* .headlines_img:hover{
-    filter: blur(0.5);
-} */
-/* .navbar_toggler_icon{
-    background-color: white;
-    color: rgb(255, 255, 255);
-}
-.bar_icon{
-    color: white;
-} */
+
 @media screen and(max-width:978px) {
     .ul_div {
         display: flex;
@@ -103,54 +97,25 @@ body {
 
 }
 
-/* .headlines_heading h2{
-    font-weight: bold;
-    margin-top: 6px;
-    
-} */
-
 .major_headlines {
     font-size: 30px;
     color: black;
-    /* text-decoration: none; */
+
 }
 
 .mini_headlines {
     font-size: 12px;
     color: black;
-    /* text-decoration: none; */
+
 }
 
-/* .politics_homepage{
-    width: 70%;
-} */
+
 .home_medium_news {
     font-size: 20px;
     color: black;
 }
 
-/* .headlines_img{
-    transform: scale(01);
-    transition: 0.3s ease-in-out;
 
-    height: auto;
-    overflow: hidden;
-
-}
-.div_with_hover_img{
-    display: inline-block;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-.div_with_hover_img:hover img{
-    transform: scale(1.1);
-} */
-
-
-
-/* .headlines_img:hover{
-    filter: contrast(70%);
-} */
 
 .medium_mini_headlines {
     font-size: 17px;
@@ -160,7 +125,7 @@ body {
 .col_reverse {
     display: flex;
     align-items: center;
-    /* flex-wrap: wrap-reverse; */
+
 }
 
 .medium_mini_img {
@@ -182,7 +147,7 @@ body {
 
 .banner_magazine {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background: linear-gradient(45deg, #000000e5, #220000b2), url('picture folder/magazines/magazines_banner_background_img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -191,7 +156,7 @@ body {
 }
 .banner_politics {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background: linear-gradient(45deg, #000000e5, #22000002), url('picture folder/politics/banner_background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -200,7 +165,7 @@ body {
 }
 .banner_sports {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background: linear-gradient(45deg, #000000e5, #2202), url('picture folder/sports/sports_background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -209,8 +174,8 @@ body {
 }
 .banner_health {
     width: 100%;
-    height: 80vh;
-    background: linear-gradient(45deg, #000000e5, #2202), url('picture folder/health/banner_background.jpg');
+    height: 100vh;
+    background: linear-gradient(45deg, #003f72e5, rgba(35, 250, 239, 0.133)), url('picture folder/health/banner_background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -218,8 +183,17 @@ body {
 }
 .banner_entertainment {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background: linear-gradient(45deg, #000000e5, #2202), url('picture folder/entertainment/entertainment_banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.banner_technology {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #4d1dfde5, rgba(13, 167, 228, 0.133)), url('picture folder/technology/technology-banner-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -266,12 +240,13 @@ body {
 }
 
 .inside_magazines_heading {
+    font-weight: bold;
     font-size: 40px;
 }
 
 .inside_magazines_small_heading {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .magazines_page_content {
@@ -306,13 +281,7 @@ body {
 }
 
 
-/* .banner_img{
-    transform: scale(1);
-    transition: 0s all ease-in;
-}
-.banner_img:hover{
-    transform: rotate(5deg);
-} */
+
 .magazines_each_col{
     position: relative;
     overflow: hidden;
