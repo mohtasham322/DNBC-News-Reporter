@@ -595,5 +595,8 @@ p{
 .health-section{
     background-color: teal;
 }
+.technology-section{
+    background: linear-gradient(40deg, blue, red);
+}
 
 
