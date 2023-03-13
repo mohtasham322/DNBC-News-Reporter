@@ -611,7 +611,20 @@ p{
 .business-section{
     background-color: rgb(194, 194, 194);
 }
+.politics-section{
+    background-color: rgb(42, 114, 0);
+}
+.sports-section{
+    background: linear-gradient(45deg,  #F48221, #FCB131);
+}
 .margin-top{
     margin-top: 200px;
+}
+.video-js .vjs-tech {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
