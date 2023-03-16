@@ -44,8 +44,20 @@
                 <div class="collapse navbar-collapse ul_div " id="navbarSupportedContent">
                     <ul class="navbar-nav  mb-2 mb-lg-0 ">
                         <li class="nav-item">
-                            <a class="nav-link" href="home_page.html">Home</a>
+                            <a class="nav-link current-tab" href="home_page.html">Home</a>
                         </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              News
+                            </a>
+                            <ul class="dropdown-menu my_navbar" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item drop-item-custom " href="#">Karachi</a></li>
+                              <li><a class="dropdown-item drop-item-custom" href="#">Mumbai</a></li>
+                              <li><a class="dropdown-item drop-item-custom" href="#">Dubai</a></li>
+                              <li><a class="dropdown-item drop-item-custom" href="#">Tokyo</a></li>
+                              <li><a class="dropdown-item drop-item-custom" href="#">Istanbul</a></li>
+                            </ul>
+                          </li>
                         <li class="nav-item ">
                             <a class="nav-link " href="politics_home.html">Politics</a>
 
@@ -77,6 +89,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About Us</a>
                         </li>
                     </ul>
                 </div>
@@ -533,7 +548,9 @@
 
 
         </div>
+        <div class="div-feedback" id="feedback-div"></div>
     </div>
+    
 
 
 
@@ -637,7 +654,7 @@
                         <span class="required_validation" id="validation3">*write your feedback*</span>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancel</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="btnclose()">cancel</button>
                         <button type="button" class="btn btn-primary" onclick="btnsend()">send</button>
                     </div>
                 </div>
@@ -785,7 +802,10 @@
     for (var i = 0; i < GetFeedbackData.length; i++) {
        var element = GetFeedbackData[i].email;
        var pass = GetFeedbackData[i].password;
-    console.log(pass);
+       var title = GetFeedbackData[i].title;
+       var feedback = GetFeedbackData[i].feedback;
+    //    document.getElementById("feedback-div").innerHTML += feedback
+
         
     }
         }

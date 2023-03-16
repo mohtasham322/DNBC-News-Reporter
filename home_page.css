@@ -96,6 +96,18 @@ p{
 .ul_div ul li {
     margin: 0px 15px !important;
 }
+.drop-item-custom:hover{
+    background-color: black;
+
+}
+.drop-item-custom{
+    font-size: 20px;
+    line-height: 30px;
+}
+.current-tab{
+    text-decoration: 3px underline !important;
+    color: red !important;
+}
 
 .ul_div ul li a {
     color: white;
