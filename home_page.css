@@ -222,8 +222,8 @@ p{
 }
 .banner_entertainment {
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(45deg, #000000e5, #2202), url('picture folder/entertainment/entertainment_banner.jpg');
+    height: 80vh;
+    background: linear-gradient(45deg, #09aa67e5, rgba(0, 58, 82, 0.133)), url('picture folder/entertainment/entertainment_banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
