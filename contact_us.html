@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="bootstrap/jquery-3.6.3.min.js"></script>
-  <link rel="stylesheet" href="home_page.css">
-  <link rel="icon" href="picture folder/logo.png">
-  <link rel="stylesheet" href="h2.css">
-  <link rel="stylesheet" href="h1.css">
-  <title>Contact Us
-  </title>
+  <!DOCTYPE html>
+  <!-- Created By CodingLab - www.codinglabweb.com -->
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="UTF-8">
+     <!-- <title> Responsive Contact Us Form  | CodingLab </title>-->
+      <link rel="stylesheet" href="style.css">    
+      <link rel="stylesheet" href="home_page.css">
+      <!-- Fontawesome CDN Link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  
+      <link rel="stylesheet" href="h1.css">
+      <link rel="stylesheet" href="h2.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     
     .form-col {
       padding: 15px;
       border-radius: 20px;
     }
+    
+    
   </style>
 
 
@@ -120,6 +123,55 @@
 
     </div>
   </div>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Surkhet, NP12</div>
+          <div class="text-two">Birendranagar 06</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+0098 9893 5647</div>
+          <div class="text-two">+0096 3434 5678</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">codinglab@gmail.com</div>
+          <div class="text-two">info.codinglab@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" id="form_name" placeholder="Enter your name">
+          
+
+        </div>
+        <span class="required_validation" id="validation1">*write your name*</span>
+        <div class="input-box">
+          <input type="text" id="form_email" placeholder="Enter your email">
+          
+        </div>
+        <span class="required_validation" id="validation2">*write your email*</span>
+              <span class="email_expression" id="email_expression_id">*write correct email*</span>
+              <span class="email_security">we will never share your email with anyone else</span>
+        <div class="input-box message-box">
+          <textarea id="form_message" cols="30" rows="15" placeholder="write your message"></textarea>
+        </div>
+        <span class="required_validation" id="validation3">*write your message*</span>
+        <div class="button">
+          <input type="button" value="Send Now" onclick="btnsend()" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
 
 
 
@@ -129,8 +181,7 @@
 
 
 
-
-  <script src="/bootstrap/js/bootstrap.min.js"></script>
+  <!-- <script src="/bootstrap/js/bootstrap.min.js"></script> -->
   <script>
     function btnsend() {
         var name_input = document.getElementById("form_name").value
