@@ -706,6 +706,7 @@
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script>
+        var FeedbackData = [];
         function btnsend() {
             var email_input = document.getElementById("form_email").value
             var password_input = document.getElementById("form_password").value
@@ -749,6 +750,16 @@
                 document.getElementById("validation2").style.display = 'none'
                 document.getElementById("validation3").style.display = 'none'
                 alert("sent successfully")
+
+                var obj = {
+                    email : email_input,
+                    password : password_input,
+                    title:title_input,
+                    feedback : feedback_input
+                }
+                FeedbackData.push(obj);
+                localStorage.setItem("feedback", JSON.stringify(FeedbackData));
+
             }
         }
         function btnclose() {
@@ -767,6 +778,16 @@
             document.getElementById("form_title").value = ""
 
 
+        }
+        GetFeedback();
+        function GetFeedback(){
+    var GetFeedbackData = JSON.parse(localStorage.getItem("feedback"));
+    for (var i = 0; i < GetFeedbackData.length; i++) {
+       var element = GetFeedbackData[i].email;
+       var pass = GetFeedbackData[i].password;
+    console.log(pass);
+        
+    }
         }
 
     </script>
