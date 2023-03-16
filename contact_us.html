@@ -1,111 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="bootstrap/jquery-3.6.3.min.js"></script>
-    <link rel="stylesheet" href="home_page.css">
-    <link rel="icon" href="picture folder/logo.png">
-    <link rel="stylesheet" href="h2.css">
-    <link rel="stylesheet" href="h1.css">
-    <title>Contact Us
-    </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="bootstrap/jquery-3.6.3.min.js"></script>
+  <link rel="stylesheet" href="home_page.css">
+  <link rel="icon" href="picture folder/logo.png">
+  <link rel="stylesheet" href="h2.css">
+  <link rel="stylesheet" href="h1.css">
+  <title>Contact Us
+  </title>
+  <style>
+    
+    .form-col {
+      padding: 15px;
+      border-radius: 20px;
+    }
+  </style>
 
 
 </head>
+
 <body>
 
-  <div class="container">
+  <div class="container ">
     <div class="row">
-  <h1>Contact Us</h1>
-  <div class="accordion" id="accordionPanelsStayOpenExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-        <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-          <b>By email</b> 
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
-        <div class="accordion-body">
-          <a href="">mohtasham322@gmail.com</a>
+      <div class="container-new">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">Surkhet, NP12</div>
+              <div class="text-two">Birendranagar 06</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+0098 9893 5647</div>
+              <div class="text-two">+0096 3434 5678</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">codinglab@gmail.com</div>
+              <div class="text-two">info.codinglab@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <form action="#">
+              <div class="input-box">
+                <input type="text" id="form_name" placeholder="Enter your name">
+
+
+              </div>
+              <span class="required_validation" id="validation1">*write your name*</span>
+              <div class="input-box">
+                <input type="text" id="form_email" placeholder="Enter your email">
+
+              </div>
+              <span class="required_validation" id="validation2">*write your email*</span>
+              <span class="email_expression" id="email_expression_id">*write correct email*</span>
+              <span class="email_security">we will never share your email with anyone else</span>
+              <div class="input-box message-box">
+                <textarea id="form_message" cols="30" rows="15" placeholder="write your message"></textarea>
+              </div>
+              <span class="required_validation" id="validation3">*write your message*</span>
+              <div class="button">
+                <input type="button" value="Send Now" onclick="btnsend()">
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-          <b>On Twitter</b>
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-        <div class="accordion-body">
-          <a href="https://twitter.com/Mohtasham322">https://twitter.com/Mohtasham322</a>
-        </div>
-      </div>
+
+    <div class="row">
+      <h3><b>Please address any correspondence to:</b> </h3>
+      <span>The DNBC Office
+      </span><br>
+      <span>5 Expressway, Off Korangi road
+      </span><br>
+      <span>Karachi, 75500
+      </span><br>
+      <span>Pakistan
+      </span><br>
+      <span>The switchboard number for DNBC is: 111-397-737 or dialing from overseas +92-21-111-397-737 and
+        +92-21-358-000-51 to 58
+      </span>
+      <span><b>Fax Number:</b>35800050</span><br><br><br>
+
+
+      <span>Islamabad Bureau Office</span><br>
+      <span>15-1 & T Center</span><br>
+      <span>Khayabane Suharwardi, Abpara Road
+      </span>
+      <span>Islamabad</span>
+      <span>Phone: 051-2624820-7
+      </span><br><br><br>
+
+      <span>Lahore Bureau Office</span><br>
+      <span>Plot #229-A, Main FerozPur Road</span><br>
+      <span>Khayabane Suharwardi, Abpara Road
+      </span>
+      <span>Islamabad</span>
+      <span>Phone: 051-2624820-7
+      </span>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8605.538137975025!2d67.03663142776469!3d24.925832100861584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1678947662828!5m2!1sen!2s"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-          <b>On Facebook</b>
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-        <div class="accordion-body">
-          <a href="https://www.facebook.com/m.mhashmi.54">https://www.facebook.com/m.mhashmi.54</a>
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-          <b>By telephone</b>
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-        <div class="accordion-body">
-          <p>03226301906</p>
-        </div>
-      </div>
-    </div><br><br>
   </div>
-
-
-<h3><b>Please address any correspondence to:</b> </h3>
-<span>The Express Tribune Office
-</span><br>
-<span>5 Expressway, Off Korangi road
-</span><br>
-<span>Karachi, 75500
-</span><br>
-<span>Pakistan
-</span><br>
-<span>The switchboard number for The Express Tribune is: 111-397-737 or dialing from overseas +92-21-111-397-737 and +92-21-358-000-51 to 58
-</span>
-<span><b>Fax Number:</b>35800050</span><br><br><br>
-
-
-<span>Islamabad Bureau Office</span><br>
-<span>15-1 & T Center</span><br>
-<span>Khayabane Suharwardi, Abpara Road
-</span>
-<span>Islamabad</span>
-<span>Phone: 051-2624820-7
-</span><br><br><br>
-
-<span>Lahore Bureau Office</span><br>
-<span>Plot #229-A, Main FerozPur Road</span><br>
-<span>Khayabane Suharwardi, Abpara Road
-</span>
-<span>Islamabad</span>
-<span>Phone: 051-2624820-7
-</span>
-
-</div>
-</div>
-
 
 
 
@@ -117,6 +131,61 @@
 
 
   <script src="/bootstrap/js/bootstrap.min.js"></script>
-    
+  <script>
+    function btnsend() {
+        var name_input = document.getElementById("form_name").value
+        var email_input = document.getElementById("form_email").value
+        var message_input = document.getElementById("form_message").value
+        var email_input_format = /^[A-z._]{3,}[0-9]{0,}@[A-z]{4,8}.[A-z]{2,4}$/;
+        var check_email_format = email_input_format.test(email_input);
+
+
+        if (name_input == "") {
+            document.getElementById("validation1").style.display = 'block'
+        }
+        else if (email_input == "") {
+            document.getElementById("validation2").style.display = 'block'
+            document.getElementById("validation1").style.display = 'none'
+
+
+        }
+        else if (check_email_format == false) {
+            document.getElementById("email_expression_id").style.display = 'block'
+            document.getElementById("validation2").style.display = 'none'
+        }
+        else if (message_input == "") {
+            document.getElementById("validation3").style.display = 'block'
+            document.getElementById("validation2").style.display = 'none'
+            document.getElementById("email_expression_id").style.display = 'none'
+
+        }
+
+        else {
+            document.getElementById("email_expression_id").style.display = 'none'
+            document.getElementById("validation1").style.display = 'none'
+            document.getElementById("validation2").style.display = 'none'
+            document.getElementById("validation3").style.display = 'none'
+            alert("sent successfully")
+        }
+    }
+    function btnclose() {
+        var email_input = document.getElementById("form_email").value
+        var password_input = document.getElementById("form_password").value
+        var feedback_input = document.getElementById("form_feedback").value
+
+        document.getElementById("validation1").style.display = 'none'
+        document.getElementById("validation2").style.display = 'none'
+        document.getElementById("validation3").style.display = 'none'
+        document.getElementById("email_expression_id").style.display = 'none'
+        document.getElementById("form_email").value = ""
+        document.getElementById("form_password").value = ""
+        document.getElementById("form_feedback").value = ""
+
+
+    }
+
+</script>
+
 </body>
+
 </html>
