@@ -199,7 +199,7 @@ p{
 .banner_politics {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(45deg, #968c00e5, #b7bd0002), url('picture folder/politics/banner_background.jpg');
+    background: linear-gradient(45deg, #6d6600e5, #24250094), url('picture folder/politics/banner_background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -640,7 +640,11 @@ color: white;
     background-color: rgb(219, 0, 0);
     color: white;
     position: sticky;
+    height: 63px;
     top:0px ;
+    display: flex;
+    align-items: center;
+    /* overflow: hidden; */
     z-index: 9;
 }
 .other-news-description{
