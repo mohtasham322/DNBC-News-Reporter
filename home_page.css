@@ -643,9 +643,10 @@ color: white;
     height: 63px;
     top:0px ;
     display: flex;
+    overflow: auto;
     align-items: center;
-    /* overflow: hidden; */
     z-index: 9;
+    box-shadow: 1px 4px 14px 3px black;
 }
 .other-news-description{
     font-size: 25px;
