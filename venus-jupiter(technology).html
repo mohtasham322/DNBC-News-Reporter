@@ -18,11 +18,11 @@
     <div class="header">
         <div class="container header_items">
             <div class="dates">
-                <div class="english_date">Thursday 16,2023</div>
-                <div class="islamic_date"><span>Rajab 25,1444 AH</span> </div>
+                <div class="english_date">March 22,2023</div>
+                <div class="islamic_date"><span>Shaban 25,1444 AH</span> </div>
             </div>
             <div class="logo_div">
-                <a href="home page.html"><img class="logo_img" src="picture folder/logo.png" alt=""></a>
+                <img class="logo_img" src="picture folder/logo.png" alt="">
             </div>
             <div class="prayer_timing"><a href="prayer_timing.html"><span>Prayer Timing</span></a></div>
         </div>
@@ -151,6 +151,48 @@
                 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today in the night sky you can see a very rare phenomenon - the <a href="https://twitter.com/hashtag/Moon?src=hash&amp;ref_src=twsrc%5Etfw">#Moon</a>, surrounded by <a href="https://twitter.com/hashtag/Jupiter?src=hash&amp;ref_src=twsrc%5Etfw">#Jupiter</a> and <a href="https://twitter.com/hashtag/Venus?src=hash&amp;ref_src=twsrc%5Etfw">#Venus</a> <a href="https://t.co/xMCdZlheeW">pic.twitter.com/xMCdZlheeW</a></p>&mdash; Arthur Morgan (@ArthurM40330824) <a href="https://twitter.com/ArthurM40330824/status/1628584956812197890?ref_src=twsrc%5Etfw">February 23, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">As usual I was sitting on the terrace watching the moon but today was different. I&#39;m not a professional photographer but today i captured Moon, <a href="https://twitter.com/hashtag/Jupiter?src=hash&amp;ref_src=twsrc%5Etfw">#Jupiter</a> and <a href="https://twitter.com/hashtag/Venus?src=hash&amp;ref_src=twsrc%5Etfw">#Venus</a> in a vertical line... <br>Soo happy to see this 😌<a href="https://twitter.com/hashtag/JupiterVenusMoon?src=hash&amp;ref_src=twsrc%5Etfw">#JupiterVenusMoon</a> <a href="https://twitter.com/hashtag/JupiterandVenus?src=hash&amp;ref_src=twsrc%5Etfw">#JupiterandVenus</a> <a href="https://t.co/WspW55DYls">pic.twitter.com/WspW55DYls</a></p>&mdash; Supriya (@supriyaa____) <a href="https://twitter.com/supriyaa____/status/1628766369650196480?ref_src=twsrc%5Etfw">February 23, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Recently, the perfect trifecta of the planets appear in the sky, when Venus and Jupiter were approaching the moon.<br>.<br>.<br>.<a href="https://twitter.com/hashtag/Venus?src=hash&amp;ref_src=twsrc%5Etfw">#Venus</a> <a href="https://twitter.com/hashtag/Jupiter?src=hash&amp;ref_src=twsrc%5Etfw">#Jupiter</a> <a href="https://twitter.com/hashtag/Moon?src=hash&amp;ref_src=twsrc%5Etfw">#Moon</a> <a href="https://twitter.com/hashtag/CU?src=hash&amp;ref_src=twsrc%5Etfw">#CU</a> <a href="https://twitter.com/hashtag/ChandigarhUniversity?src=hash&amp;ref_src=twsrc%5Etfw">#ChandigarhUniversity</a> <a href="https://t.co/U1hDpHIJrp">pic.twitter.com/U1hDpHIJrp</a></p>&mdash; Chandigarh University (@Chandigarh_uni) <a href="https://twitter.com/Chandigarh_uni/status/1629017494806736898?ref_src=twsrc%5Etfw">February 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <div class="container mt-4">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Send Feedback
+                    </button>
+            
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-custom">
+                            <div class="modal-content">
+                                <div class="modal-header modal-header-custom">
+                                    <h5 class="modal-title " id="exampleModalLabel">Feedback Form</h5>
+                                    <button type="button" class="btn-close modal-cancel-custom" data-bs-dismiss="modal"
+                                        aria-label="Close" onclick="btnclose()"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <label for="">Email Address:</label><br>
+                                    <input class="form-control" type="email" name="email" id="form_email" placeholder="email"
+                                        autocomplete="on">
+                                    <span class="required_validation" id="validation1">*write your email*</span>
+                                    <span class="email_expression" id="email_expression_id">*write correct email*</span>
+                                    <span class="email_security">we will never share your email with anyone else</span><br>
+                                    <label for="">Password:</label><br>
+                                    <input class="form-control" type="password" name="password" id="form_password"
+                                        placeholder="password">
+                                    <span class="required_validation" id="validation2">*type your password*</span>
+                                    <label for="">Title of news:</label><br>
+                                    <input class="form-control" type="text" name="title" id="form_title" placeholder="title of news"
+                                        autocomplete="on">
+                                    <span class="required_validation" id="validation4">*write title of news*</span>
+                                    <label for="">Feedback:</label><br>
+                                    <textarea class="form-control" name="textarea" id="form_feedback" cols="70" rows="7"
+                                        placeholder="write your feedback"></textarea>
+                                    <span class="required_validation" id="validation3">*write your feedback*</span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="btnclose()">cancel</button>
+                                    <button type="button" class="btn btn-primary" onclick="btnsend()">send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 
 
@@ -381,6 +423,7 @@
     </div>
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="feedback.js"></script>
 
 </body>
 </html>

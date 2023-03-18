@@ -26,11 +26,11 @@
     <div class="header">
         <div class="container header_items">
             <div class="dates">
-                <div class="english_date">Thursday 16,2023</div>
-                <div class="islamic_date"><span>Rajab 25,1444 AH</span> </div>
+                <div class="english_date">March 22,2023</div>
+                <div class="islamic_date"><span>Shaban 25,1444 AH</span> </div>
             </div>
             <div class="logo_div">
-                <a href="home page.html"><img class="logo_img" src="picture folder/logo.png" alt=""></a>
+                <img class="logo_img" src="picture folder/logo.png" alt="">
             </div>
             <div class="prayer_timing"><a href="prayer_timing.html"><span>Prayer Timing</span></a></div>
         </div>
@@ -164,6 +164,48 @@
                 <p>Meanwhile, Skinny Dipping was rumoured to be seeing Dylan O’Brien last year following her tumultuous “situationship” with Joshua Basset in 2020.
 
                 </p>
+                <div class="container mt-4">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Send Feedback
+                    </button>
+            
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-custom">
+                            <div class="modal-content">
+                                <div class="modal-header modal-header-custom">
+                                    <h5 class="modal-title " id="exampleModalLabel">Feedback Form</h5>
+                                    <button type="button" class="btn-close modal-cancel-custom" data-bs-dismiss="modal"
+                                        aria-label="Close" onclick="btnclose()"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <label for="">Email Address:</label><br>
+                                    <input class="form-control" type="email" name="email" id="form_email" placeholder="email"
+                                        autocomplete="on">
+                                    <span class="required_validation" id="validation1">*write your email*</span>
+                                    <span class="email_expression" id="email_expression_id">*write correct email*</span>
+                                    <span class="email_security">we will never share your email with anyone else</span><br>
+                                    <label for="">Password:</label><br>
+                                    <input class="form-control" type="password" name="password" id="form_password"
+                                        placeholder="password">
+                                    <span class="required_validation" id="validation2">*type your password*</span>
+                                    <label for="">Title of news:</label><br>
+                                    <input class="form-control" type="text" name="title" id="form_title" placeholder="title of news"
+                                        autocomplete="on">
+                                    <span class="required_validation" id="validation4">*write title of news*</span>
+                                    <label for="">Feedback:</label><br>
+                                    <textarea class="form-control" name="textarea" id="form_feedback" cols="70" rows="7"
+                                        placeholder="write your feedback"></textarea>
+                                    <span class="required_validation" id="validation3">*write your feedback*</span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="btnclose()">cancel</button>
+                                    <button type="button" class="btn btn-primary" onclick="btnsend()">send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 
                 
@@ -408,6 +450,7 @@
         </div>
     </div>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="feedback.js"></script>
 
 
 </body>
