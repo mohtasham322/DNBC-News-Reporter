@@ -640,7 +640,7 @@ color: white;
     background-color: rgb(219, 0, 0);
     color: white;
     position: sticky;
-    height: 61px;
+    height: fit-content;
     top:0px ;
     display: flex;
     align-items: center;
@@ -662,7 +662,7 @@ color: white;
     background: linear-gradient(40deg, blue, red);
 }
 .business-section{
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(160, 160, 160);
 }
 .politics-section{
     background-color: rgb(42, 114, 0);
@@ -697,5 +697,10 @@ color: white;
 .modal-cancel-custom{
     color: white;
     background-color: white;
+}
+.n-separate{
+    font-weight: bold;
+    color: rgb(0, 112, 9);
+    text-decoration: underline;
 }
 
