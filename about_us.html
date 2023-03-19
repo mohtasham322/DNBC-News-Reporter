@@ -17,16 +17,16 @@
 <body>
   <div class="header">
     <div class="container header_items">
-        <div class="dates">
-            <div class="english_date">March 22,2023</div>
-            <div class="islamic_date"><span>Shaban 25,1444 AH</span> </div>
-        </div>
-        <div class="logo_div">
-            <img class="logo_img" src="picture folder/logo.png" alt="">
-        </div>
-        <div class="prayer_timing"><a href="prayer_timing.html"><span>Prayer Timing</span></a></div>
+      <div class="dates">
+        <div class="english_date">March 22,2023</div>
+        <div class="islamic_date"><span>Shaban 25,1444 AH</span> </div>
+      </div>
+      <div class="logo_div">
+        <img class="logo_img" src="picture folder/logo.png" alt="">
+      </div>
+      <div class="prayer_timing"><a href="prayer_timing.html"><span>Prayer Timing</span></a></div>
     </div>
-</div>
+  </div>
   <nav class="navbar navbar-expand-lg my_navbar">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -95,9 +95,10 @@
   </nav>
 
 
-  <div class="container">
-    <div class="row">
-      <div class="col "><h1>ABOUT DNBC DIGITAL</h1>
+  <div class="container mt-5">
+    <div class="row justify-content-center align-items-center">
+      <div class="col col-lg-10 col-md-10 col-sm-12 col-12">
+        <h1>ABOUT DNBC DIGITAL</h1>
         <p>
           DNBC Digital is the world leader in online news and information and seeks
           to inform, engage and empower the world. Staffed 24 hours, seven days a
@@ -130,7 +131,7 @@
           events are reported daily to over one billion people worldwide.</p>
         <h2>DNBC’S PARENT COMPANY:</h2>
         <p>Warner Bros. Discovery, Inc.</p>
-      
+
         <h2>SHOP DNBC:</h2>
         <p>Check out the DNBC Store for hats, shirts, bags and more.</p>
         <h2>SERVICES:</h2>
@@ -148,14 +149,53 @@
           Headline News programs.</p>
         <p>DNBC offers e-mail updates as numerous and diverse as your tastes. Register
           now and select from the various e-mails.</p>
-        <p><b> SUBMIT A STORY IDEA:</b></p>
-        <p>Have a story idea? <a href="">Click Here</a></p>
         <h2>SUBMIT FEEDBACK:</h2>
-        <p>Have something to say? <a href="">Click Here</a></p>
+        <p>Have something to say?
+          <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            click here
+          </a>
+
+          <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-custom">
+            <div class="modal-content">
+              <div class="modal-header modal-header-custom">
+                <h5 class="modal-title " id="exampleModalLabel">Feedback Form</h5>
+                <button type="button" class="btn-close modal-cancel-custom" data-bs-dismiss="modal" aria-label="Close"
+                  onclick="btnclose()"></button>
+              </div>
+              <div class="modal-body">
+                <label for="">Email Address:</label><br>
+                <input class="form-control" type="email" name="email" id="form_email" placeholder="email"
+                  autocomplete="on">
+                <span class="required_validation" id="validation1">*write your email*</span>
+                <span class="email_expression" id="email_expression_id">*write correct email*</span>
+                <span class="email_security">we will never share your email with anyone else</span><br>
+                <label for="">Password:</label><br>
+                <input class="form-control" type="password" name="password" id="form_password" placeholder="password">
+                <span class="required_validation" id="validation2">*type your password*</span>
+                <label for="">Title of news:</label><br>
+                <input class="form-control" type="text" name="title" id="form_title" placeholder="title of news"
+                  autocomplete="on">
+                <span class="required_validation" id="validation4">*write title of news*</span>
+                <label for="">Feedback:</label><br>
+                <textarea class="form-control" name="textarea" id="form_feedback" cols="70" rows="7"
+                  placeholder="write your feedback"></textarea>
+                <span class="required_validation" id="validation3">*write your feedback*</span>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                  onclick="btnclose()">cancel</button>
+                <button type="button" class="btn btn-primary" onclick="btnsend()">send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </p>
         <h2>LEGAL TERMS AND CONDITIONS:</h2>
         <h2>DNBC INTERACTIVE SERVICE AGREEMENT:</h2>
         <p>View the terms of the DNBC Interactive Services Agreement.</p>
-      
+
         <h2>PRIVACY STATEMENT:</h2>
         <p>To better protect your privacy, we provide this notice explaining our online
           information practices and the choices you can make about the way your
@@ -169,128 +209,156 @@
           infringement, please provide DNBC’s Copyright Agent the following information
           required by the Online Copyright Infringement Liability Limitation Act of
           the Digital Millennium Copyright Act, 17 U.S.C. ¤ 512:</p>
-        <p>A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that
+        <p>A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right
+          that
           is allegedly infringed.</p>
-      
-        <p>Identification of the copyright work claimed to have been infringed, or, if multiple copyrighted works at a single
+
+        <p>Identification of the copyright work claimed to have been infringed, or, if multiple copyrighted works at a
+          single
           online site are covered by a single notification, a representative list of such works at that site.</p>
-      
+
         <p>Information reasonably sufficient to permit us to contact the complaining party.</p>
         <p> A statement that the information in the notification is accurate, and under penalty of perjury, that the
-          complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.</p>
-      
-        <p>Identification of the copyright work claimed to have been infringed, or, if multiple copyrighted works at a single
+          complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly
+          infringed.</p>
+
+        <p>Identification of the copyright work claimed to have been infringed, or, if multiple copyrighted works at a
+          single
           online site are covered by a single notification, a representative list of such works at that site.</p>
-      
-        <p>Identification of the material that is claimed to be infringing or to be the subject of infringing activity and
-          that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit us to
+
+        <p>Identification of the material that is claimed to be infringing or to be the subject of infringing activity
+          and
+          that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit us
+          to
           locate the material.</p>
         <p>Information reasonably sufficient to permit us to contact the complaining party.</p>
-      
-        <p> A statement that the complaining party has a good-faith belief that use of the material in the manner complained
+
+        <p> A statement that the complaining party has a good-faith belief that use of the material in the manner
+          complained
           of is not authorized by the copyright owner, its agent, or the law.</p>
         <p>A statement that the information in the notification is accurate, and under penalty of perjury, that the
-          complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+          complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly
+          infringed.
         </p>
-      
-        <p>Identification of the material that is claimed to be infringing or to be the subject of infringing activity and
-          that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit us to
+
+        <p>Identification of the material that is claimed to be infringing or to be the subject of infringing activity
+          and
+          that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit us
+          to
           locate the material.</p>
         <p>Information reasonably sufficient to permit us to contact the complaining party.
         </p>
-      
-        <p>A statement that the complaining party has a good-faith belief that use of the material in the manner complained of
+
+        <p>A statement that the complaining party has a good-faith belief that use of the material in the manner
+          complained of
           is not authorized by the copyright owner, its agent, or the law.
         </p>
-      
+
         <p>A statement that the information in the notification is accurate, and under penalty of perjury, that the
-          complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+          complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly
+          infringed.
         </p>
-      
+
         <p>Information reasonably sufficient to permit us to contact the complaining party.
         </p>
-      
-        <p>A statement that the complaining party has a good-faith belief that use of the material in the manner complained of
+
+        <p>A statement that the complaining party has a good-faith belief that use of the material in the manner
+          complained of
           is not authorized by the copyright owner, its agent, or the law.
         </p>
-      
+
         <p>A statement that the information in the notification is accurate, and under penalty of perjury, that the
-          complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+          complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly
+          infringed.
         </p>
-      
-        <p>A statement that the complaining party has a good-faith belief that use of the material in the manner complained of
+
+        <p>A statement that the complaining party has a good-faith belief that use of the material in the manner
+          complained of
           is not authorized by the copyright owner, its agent, or the law.
         </p>
-      
+
         <p>A statement that the information in the notification is accurate, and under penalty of perjury, that the
-          complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+          complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly
+          infringed.
         </p>
-      
+
         <p>A statement that the information in the notification is accurate, and under penalty of perjury, that the
-          complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+          complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly
+          infringed.
         </p>
-      
-        <p>DNBC’s Copyright Agent for notice of claims of copyright infringement on or regarding this site can be reached by
+
+        <p>DNBC’s Copyright Agent for notice of claims of copyright infringement on or regarding this site can be
+          reached by
           sending an email to copyrightagent@turner.com or writing to-
-        </p></div>
+        </p>
+      </div>
     </div>
   </div>
   <div class="container-fluid footer-container pt-5  ">
     <div class="row footer-row">
-        <div class="col col-lg-2 col-md-2 col-sm-3 col-4 footer-col-logo footer-each-col "><img
-                class="footer-logo" src="picture folder/logo.png" alt=""></div>
-        <div class="col col-lg-4 col-md-5 col-sm-6 col-6 footer-each-col">
-            
-            <ul class="navigation-items-ul">
-                <div class="row">
-                    <div class="col">
-                        <span class="footer-navigation-heading">Navigation</span><br><br>
-                        
-                        <li class="footer-navigation-item"><a href="politics_home.html" class="navigation-item-link">Politics</a></li>
-                        <li class="footer-navigation-item"><a href="sports_home.html" class="navigation-item-link">Sports</a></li>
-                        <li class="footer-navigation-item"><a href="business-home.html" class="navigation-item-link">Business</a></li>
-                        <li class="footer-navigation-item"><a href="entertainment_home.html" class="navigation-item-link">Entertainment</a></li>
-                        <li class="footer-navigation-item"><a href="technology-home.html" class="navigation-item-link">Technology</a></li>
-                        <li class="footer-navigation-item"><a href="health_home.html" class="navigation-item-link">Health</a></li>
-                        <li class="footer-navigation-item"><a href="contact-us-demo.html" class="navigation-item-link">Contact Us</a></li>
-                        <li class="footer-navigation-item"><a href="about_us.html" class="navigation-item-link">About Us</a></li>
-                    </div>
-                    <div class="col">
-                        <span class="footer-navigation-heading">News</span><br><br>
-                        <li class="footer-navigation-item"><a href="karachi/city.html" class="navigation-item-link">Karachi</a></li>
-                        <li class="footer-navigation-item"><a href="dubai/city.html" class="navigation-item-link">Dubai</a></li>
-                        <li class="footer-navigation-item"><a href="mumbai/city.html" class="navigation-item-link">Mumbai</a></li>
-                        <li class="footer-navigation-item"><a href="new_york/city.html" class="navigation-item-link">New York</a></li>
-                        <li class="footer-navigation-item"><a href="istanbul/city.html" class="navigation-item-link">Istanbul</a></li>
-                    </div>
-                </div>
-            </ul>
-        </div>
-        <div class="col col-lg-4 col-md-5 col-sm-12 col-12 footer-each-col">
-            <span class="footer-navigation-heading">Follow Us On</span><br><br>
-            <div class="social-icons-div">
-                <a href="https://www.facebook.com/m.mhashmi.54" class="social-icons" target="_blank">
-                    <div id="facebook"><i class="fa fa-facebook-f" style="font-size:36px"></i></div>
-                </a>
-                <a class="social-icons" href="https://wa.me/03226301906" target="blank">
-                    <div id="whatsapp"><i class="fa fa-whatsapp" style="font-size:36px"></i></div>
-                </a>
-                <a class="social-icons" href="https://twitter.com/Mohtasham322">
-                    <div id="twitter"><i class="fa fa-twitter" style="font-size:36px"></i></div>
-                </a>
-                <a class="social-icons" href="https://www.instagram.com/">
-                    <div id="instagram"><i class="fa fa-instagram" style="font-size:36px"></i></div>
-                </a>
-                <a class="social-icons" href="https://www.skype.com/en/">
-                    <div id="skype"><i class="fa fa-skype" style="font-size:36px"></i></div>
-                </a>
-            </div>
+      <div class="col col-lg-2 col-md-2 col-sm-3 col-4 footer-col-logo footer-each-col "><img class="footer-logo"
+          src="picture folder/logo.png" alt=""></div>
+      <div class="col col-lg-4 col-md-5 col-sm-6 col-6 footer-each-col">
 
+        <ul class="navigation-items-ul">
+          <div class="row">
+            <div class="col">
+              <span class="footer-navigation-heading">Navigation</span><br><br>
+
+              <li class="footer-navigation-item"><a href="politics_home.html" class="navigation-item-link">Politics</a>
+              </li>
+              <li class="footer-navigation-item"><a href="sports_home.html" class="navigation-item-link">Sports</a></li>
+              <li class="footer-navigation-item"><a href="business-home.html" class="navigation-item-link">Business</a>
+              </li>
+              <li class="footer-navigation-item"><a href="entertainment_home.html"
+                  class="navigation-item-link">Entertainment</a></li>
+              <li class="footer-navigation-item"><a href="technology-home.html"
+                  class="navigation-item-link">Technology</a></li>
+              <li class="footer-navigation-item"><a href="health_home.html" class="navigation-item-link">Health</a></li>
+              <li class="footer-navigation-item"><a href="contact-us-demo.html" class="navigation-item-link">Contact
+                  Us</a></li>
+              <li class="footer-navigation-item"><a href="about_us.html" class="navigation-item-link">About Us</a></li>
+            </div>
+            <div class="col">
+              <span class="footer-navigation-heading">News</span><br><br>
+              <li class="footer-navigation-item"><a href="karachi/city.html" class="navigation-item-link">Karachi</a>
+              </li>
+              <li class="footer-navigation-item"><a href="dubai/city.html" class="navigation-item-link">Dubai</a></li>
+              <li class="footer-navigation-item"><a href="mumbai/city.html" class="navigation-item-link">Mumbai</a></li>
+              <li class="footer-navigation-item"><a href="new_york/city.html" class="navigation-item-link">New York</a>
+              </li>
+              <li class="footer-navigation-item"><a href="istanbul/city.html" class="navigation-item-link">Istanbul</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="col col-lg-4 col-md-5 col-sm-12 col-12 footer-each-col">
+        <span class="footer-navigation-heading">Follow Us On</span><br><br>
+        <div class="social-icons-div">
+          <a href="https://www.facebook.com/m.mhashmi.54" class="social-icons" target="_blank">
+            <div id="facebook"><i class="fa fa-facebook-f" style="font-size:36px"></i></div>
+          </a>
+          <a class="social-icons" href="https://wa.me/03226301906" target="blank">
+            <div id="whatsapp"><i class="fa fa-whatsapp" style="font-size:36px"></i></div>
+          </a>
+          <a class="social-icons" href="https://twitter.com/Mohtasham322">
+            <div id="twitter"><i class="fa fa-twitter" style="font-size:36px"></i></div>
+          </a>
+          <a class="social-icons" href="https://www.instagram.com/">
+            <div id="instagram"><i class="fa fa-instagram" style="font-size:36px"></i></div>
+          </a>
+          <a class="social-icons" href="https://www.skype.com/en/">
+            <div id="skype"><i class="fa fa-skype" style="font-size:36px"></i></div>
+          </a>
         </div>
+
+      </div>
     </div>
-</div>
-  
+  </div>
+
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="feedback.js"></script>
 
 
 </body>

@@ -28,7 +28,7 @@
             <div class="prayer_timing"><a href="/prayer_timing.html"><span>Prayer Timing</span></a></div>
         </div>
     </div>
-    
+
     <nav class="navbar navbar-expand-lg my_navbar">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,17 +43,19 @@
                         <a class="nav-link " href="/index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle current-tab" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          News
+                        <a class="nav-link dropdown-toggle current-tab" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            News
                         </a>
                         <ul class="dropdown-menu my_navbar " aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item drop-item-custom " href="/karachi/city.html">Karachi</a></li>
-                          <li><a class="dropdown-item drop-item-custom " href="/mumbai/city.html">Mumbai</a></li>
-                          <li><a class="dropdown-item drop-item-custom" href="/dubai/city.html">Dubai</a></li>
-                          <li><a class="dropdown-item drop-item-custom" href="/new_york/city.html">New York</a></li>
-                          <li><a class="dropdown-item drop-item-custom  current-tab" href="city.html">Istanbul</a></li>
+                            <li><a class="dropdown-item drop-item-custom " href="/karachi/city.html">Karachi</a></li>
+                            <li><a class="dropdown-item drop-item-custom " href="/mumbai/city.html">Mumbai</a></li>
+                            <li><a class="dropdown-item drop-item-custom" href="/dubai/city.html">Dubai</a></li>
+                            <li><a class="dropdown-item drop-item-custom" href="/new_york/city.html">New York</a></li>
+                            <li><a class="dropdown-item drop-item-custom  current-tab" href="city.html">Istanbul</a>
+                            </li>
                         </ul>
-                      </li>
+                    </li>
                     <li class="nav-item ">
                         <a class="nav-link " href="/politics_home.html">Politics</a>
 
@@ -95,11 +97,10 @@
 
 
     </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col col-lg-8">
-                <img class="w-100
-                " src="img/istanbulnews 4.jpg" alt="">
+    <div class="container mt-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col col-lg-10 col-md-10 col-sm-12 col-12">
+                <img class="w-100" src="img/istanbulnews 4.jpg" alt="">
                 <h2>'Psychological first aid' helps Turkiye quake survivors cope with PTSD
 
                 </h2>
@@ -207,78 +208,94 @@
                     The death toll from the Kahramanmaraş-centered twin earthquakes in Türkiye's southeast was revised
                     Monday and has reached 48,448, Interior Minister Süleyman Soylu said during news conference in
                     Malatya.</p>
-                    <div class="container mt-4">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Send Feedback
-                        </button>
-                
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-custom">
-                                <div class="modal-content">
-                                    <div class="modal-header modal-header-custom">
-                                        <h5 class="modal-title " id="exampleModalLabel">Feedback Form</h5>
-                                        <button type="button" class="btn-close modal-cancel-custom" data-bs-dismiss="modal"
-                                            aria-label="Close" onclick="btnclose()"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <label for="">Email Address:</label><br>
-                                        <input class="form-control" type="email" name="email" id="form_email" placeholder="email"
-                                            autocomplete="on">
-                                        <span class="required_validation" id="validation1">*write your email*</span>
-                                        <span class="email_expression" id="email_expression_id">*write correct email*</span>
-                                        <span class="email_security">we will never share your email with anyone else</span><br>
-                                        <label for="">Password:</label><br>
-                                        <input class="form-control" type="password" name="password" id="form_password"
-                                            placeholder="password">
-                                        <span class="required_validation" id="validation2">*type your password*</span>
-                                        <label for="">Title of news:</label><br>
-                                        <input class="form-control" type="text" name="title" id="form_title" placeholder="title of news"
-                                            autocomplete="on">
-                                        <span class="required_validation" id="validation4">*write title of news*</span>
-                                        <label for="">Feedback:</label><br>
-                                        <textarea class="form-control" name="textarea" id="form_feedback" cols="70" rows="7"
-                                            placeholder="write your feedback"></textarea>
-                                        <span class="required_validation" id="validation3">*write your feedback*</span>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="btnclose()">cancel</button>
-                                        <button type="button" class="btn btn-primary" onclick="btnsend()">send</button>
-                                    </div>
+                <div class="container mt-4">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Send Feedback
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-custom">
+                            <div class="modal-content">
+                                <div class="modal-header modal-header-custom">
+                                    <h5 class="modal-title " id="exampleModalLabel">Feedback Form</h5>
+                                    <button type="button" class="btn-close modal-cancel-custom" data-bs-dismiss="modal"
+                                        aria-label="Close" onclick="btnclose()"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <label for="">Email Address:</label><br>
+                                    <input class="form-control" type="email" name="email" id="form_email"
+                                        placeholder="email" autocomplete="on">
+                                    <span class="required_validation" id="validation1">*write your email*</span>
+                                    <span class="email_expression" id="email_expression_id">*write correct email*</span>
+                                    <span class="email_security">we will never share your email with anyone
+                                        else</span><br>
+                                    <label for="">Password:</label><br>
+                                    <input class="form-control" type="password" name="password" id="form_password"
+                                        placeholder="password">
+                                    <span class="required_validation" id="validation2">*type your password*</span>
+                                    <label for="">Title of news:</label><br>
+                                    <input class="form-control" type="text" name="title" id="form_title"
+                                        placeholder="title of news" autocomplete="on">
+                                    <span class="required_validation" id="validation4">*write title of news*</span>
+                                    <label for="">Feedback:</label><br>
+                                    <textarea class="form-control" name="textarea" id="form_feedback" cols="70" rows="7"
+                                        placeholder="write your feedback"></textarea>
+                                    <span class="required_validation" id="validation3">*write your feedback*</span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                        onclick="btnclose()">cancel</button>
+                                    <button type="button" class="btn btn-primary" onclick="btnsend()">send</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="container-fluid footer-container pt-5  ">
         <div class="row footer-row">
-            <div class="col col-lg-2 col-md-2 col-sm-3 col-4 footer-col-logo footer-each-col "><img
-                    class="footer-logo" src="/picture folder/logo.png" alt=""></div>
+            <div class="col col-lg-2 col-md-2 col-sm-3 col-4 footer-col-logo footer-each-col "><img class="footer-logo"
+                    src="/picture folder/logo.png" alt=""></div>
             <div class="col col-lg-4 col-md-5 col-sm-6 col-6 footer-each-col">
-                
+
                 <ul class="navigation-items-ul">
                     <div class="row">
                         <div class="col">
                             <span class="footer-navigation-heading">Navigation</span><br><br>
-                            
-                            <li class="footer-navigation-item"><a href="/politics_home.html" class="navigation-item-link">Politics</a></li>
-                            <li class="footer-navigation-item"><a href="/sports_home.html" class="navigation-item-link">Sports</a></li>
-                            <li class="footer-navigation-item"><a href="/business-home.html" class="navigation-item-link">Business</a></li>
-                            <li class="footer-navigation-item"><a href="/entertainment_home.html" class="navigation-item-link">Entertainment</a></li>
-                            <li class="footer-navigation-item"><a href="/technology-home.html" class="navigation-item-link">Technology</a></li>
-                            <li class="footer-navigation-item"><a href="/health_home.html" class="navigation-item-link">Health</a></li>
-                            <li class="footer-navigation-item"><a href="/contact-us-demo.html" class="navigation-item-link">Contact Us</a></li>
-                            <li class="footer-navigation-item"><a href="/about_us.html" class="navigation-item-link">About Us</a></li>
+
+                            <li class="footer-navigation-item"><a href="/politics_home.html"
+                                    class="navigation-item-link">Politics</a></li>
+                            <li class="footer-navigation-item"><a href="/sports_home.html"
+                                    class="navigation-item-link">Sports</a></li>
+                            <li class="footer-navigation-item"><a href="/business-home.html"
+                                    class="navigation-item-link">Business</a></li>
+                            <li class="footer-navigation-item"><a href="/entertainment_home.html"
+                                    class="navigation-item-link">Entertainment</a></li>
+                            <li class="footer-navigation-item"><a href="/technology-home.html"
+                                    class="navigation-item-link">Technology</a></li>
+                            <li class="footer-navigation-item"><a href="/health_home.html"
+                                    class="navigation-item-link">Health</a></li>
+                            <li class="footer-navigation-item"><a href="/contact-us-demo.html"
+                                    class="navigation-item-link">Contact Us</a></li>
+                            <li class="footer-navigation-item"><a href="/about_us.html"
+                                    class="navigation-item-link">About Us</a></li>
                         </div>
                         <div class="col">
                             <span class="footer-navigation-heading">News</span><br><br>
-                            <li class="footer-navigation-item"><a href="/karachi/city.html" class="navigation-item-link">Karachi</a></li>
-                            <li class="footer-navigation-item"><a href="/dubai/city.html" class="navigation-item-link">Dubai</a></li>
-                            <li class="footer-navigation-item"><a href="/mumbai/city.html" class="navigation-item-link">Mumbai</a></li>
-                            <li class="footer-navigation-item"><a href="/new_york/city.html" class="navigation-item-link">New York</a></li>
-                            <li class="footer-navigation-item"><a href="city.html" class="navigation-item-link">Istanbul</a></li>
+                            <li class="footer-navigation-item"><a href="/karachi/city.html"
+                                    class="navigation-item-link">Karachi</a></li>
+                            <li class="footer-navigation-item"><a href="/dubai/city.html"
+                                    class="navigation-item-link">Dubai</a></li>
+                            <li class="footer-navigation-item"><a href="/mumbai/city.html"
+                                    class="navigation-item-link">Mumbai</a></li>
+                            <li class="footer-navigation-item"><a href="/new_york/city.html"
+                                    class="navigation-item-link">New York</a></li>
+                            <li class="footer-navigation-item"><a href="city.html"
+                                    class="navigation-item-link">Istanbul</a></li>
                         </div>
                     </div>
                 </ul>
@@ -302,7 +319,7 @@
                         <div id="skype"><i class="fa fa-skype" style="font-size:36px"></i></div>
                     </a>
                 </div>
-    
+
             </div>
         </div>
     </div>

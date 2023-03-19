@@ -1,473 +1,514 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">    
-    <link rel="stylesheet" href="home_page.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="home_page.css">
 
-    <link rel="stylesheet" href="h1.css">
-    <link rel="stylesheet" href="h2.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Contact Us</title>
-     <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-.container-new{
-font-family: "Poppins" , sans-serif;
-  width: 100%;
-  background: #fff;
-  border-radius: 6px;
-  /* padding: 20px 60px 30px 40px; */
-  box-shadow: 0px 0px 7px 8px rgba(0, 0, 0, 0.2);
-}
-.container-new .content{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.container-new .content .left-side{
-  width: 25%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 15px;
-  position: relative;
-}
-.content .left-side::before{
-  content: '';
-  position: absolute;
-  height: 70%;
-  width: 2px;
-  right: -15px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #afafb6;
-}
-.content .left-side .details{
-  margin: 14px;
-  text-align: center;
-}
-.content .left-side .details i{
-  font-size: 30px;
-  color: #3e2093;
-  margin-bottom: 10px;
-}
-.content .left-side .details .topic{
-  font-size: 18px;
-  font-weight: 500;
-}
-.content .left-side .details .text-one,
-.content .left-side .details .text-two{
-  font-size: 14px;
-  color: #afafb6;
-}
-.container-new .content .right-side{
-  width: 75%;
-  margin-left: 75px;
-}
-.content .right-side .topic-text{
-  font-size: 23px;
-  font-weight: 600;
-  color: #3e2093;
-}
-.right-side .input-box{
-  height: 50px;
-  width: 100%;
-  margin: 12px 0;
-}
-.right-side .input-box input,
-.right-side .input-box textarea{
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  background: #F0F1F8;
-  border-radius: 6px;
-  padding: 0 15px;
-  resize: none;
-}
-.right-side .message-box{
-  min-height: 150px;
-}
-.right-side .input-box textarea{
-  padding-top: 6px;
-}
-.right-side .button{
-  display: inline-block;
-  margin-top: 12px;
-}
-.right-side .button input[type="button"]{
-  color: #fff;
-  font-size: 18px;
-  outline: none;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  background: #3e2093;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.button input[type="button"]:hover{
-  background: #5029bc;
-}
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home_page.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="home_page.css">
 
-@media (max-width: 950px) {
-  .container-new{
-    width: 90%;
-    padding: 30px 40px 40px 35px ;
-  }
-  .container-new .content .right-side{
-   width: 75%;
-   margin-left: 55px;
-}
-}
-@media (max-width: 820px) {
-  .container-new{
-    margin: 40px 0;
-    height: 100%;
-  }
-  .container-new .content{
-    flex-direction: column-reverse;
-  }
- .container-new .content .left-side{
-   width: 100%;
-   flex-direction: row;
-   margin-top: 40px;
-   justify-content: center;
-   flex-wrap: wrap;
- }
- .container-new .content .left-side::before{
-   display: none;
- }
- .container-new .content .right-side{
-   width: 100%;
-   margin-left: 0;
- }
+  <link rel="stylesheet" href="h1.css">
+  <link rel="stylesheet" href="h2.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-} 
-.map-custom{
-  padding: 10px;
- }
- .office-style{
-  text-decoration: underline;
-  font-weight: bold;
-  color: rgb(0, 0, 133);
- }
+    .container-new {
+      font-family: "Poppins", sans-serif;
+      width: 100%;
+      background: #fff;
+      border-radius: 6px;
+      /* padding: 20px 60px 30px 40px; */
+      box-shadow: 0px 0px 7px 8px rgba(0, 0, 0, 0.2);
+    }
 
+    .container-new .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-     </style>
-   </head>
+    .container-new .content .left-side {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+      position: relative;
+    }
+
+    .content .left-side::before {
+      content: '';
+      position: absolute;
+      height: 70%;
+      width: 2px;
+      right: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #afafb6;
+    }
+
+    .content .left-side .details {
+      margin: 14px;
+      text-align: center;
+    }
+
+    .content .left-side .details i {
+      font-size: 30px;
+      color: #3e2093;
+      margin-bottom: 10px;
+    }
+
+    .content .left-side .details .topic {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .content .left-side .details .text-one,
+    .content .left-side .details .text-two {
+      font-size: 14px;
+      color: #afafb6;
+    }
+
+    .container-new .content .right-side {
+      width: 75%;
+      margin-left: 75px;
+    }
+
+    .content .right-side .topic-text {
+      font-size: 23px;
+      font-weight: 600;
+      color: #3e2093;
+    }
+
+    .right-side .input-box {
+      height: 50px;
+      width: 100%;
+      margin: 12px 0;
+    }
+
+    .right-side .input-box input,
+    .right-side .input-box textarea {
+      height: 100%;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      background: #F0F1F8;
+      border-radius: 6px;
+      padding: 0 15px;
+      resize: none;
+    }
+
+    .right-side .message-box {
+      min-height: 150px;
+    }
+
+    .right-side .input-box textarea {
+      padding-top: 6px;
+    }
+
+    .right-side .button {
+      display: inline-block;
+      margin-top: 12px;
+    }
+
+    .right-side .button input[type="button"] {
+      color: #fff;
+      font-size: 18px;
+      outline: none;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      background: #3e2093;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .button input[type="button"]:hover {
+      background: #5029bc;
+    }
+
+    @media (max-width: 950px) {
+      .container-new {
+        width: 90%;
+        padding: 30px 40px 40px 35px;
+      }
+
+      .container-new .content .right-side {
+        width: 75%;
+        margin-left: 55px;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .container-new {
+        margin: 40px 0;
+        height: 100%;
+      }
+
+      .container-new .content {
+        flex-direction: column-reverse;
+      }
+
+      .container-new .content .left-side {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .container-new .content .left-side::before {
+        display: none;
+      }
+
+      .container-new .content .right-side {
+        width: 100%;
+        margin-left: 0;
+      }
+
+    }
+
+    .map-custom {
+      padding: 10px;
+    }
+
+    .office-style {
+      text-decoration: underline;
+      font-weight: bold;
+      color: rgb(0, 0, 133);
+    }
+  </style>
+</head>
+
 <body>
   <div class="header">
     <div class="container header_items">
-        <div class="dates">
-            <div class="english_date">March 22,2023</div>
-            <div class="islamic_date"><span>Shaban 25,1444 AH</span> </div>
-        </div>
-        <div class="logo_div">
-            <img class="logo_img" src="picture folder/logo.png" alt="">
-        </div>
-        <div class="prayer_timing"><a href="prayer_timing.html"><span>Prayer Timing</span></a></div>
+      <div class="dates">
+        <div class="english_date">March 22,2023</div>
+        <div class="islamic_date"><span>Shaban 25,1444 AH</span> </div>
+      </div>
+      <div class="logo_div">
+        <img class="logo_img" src="picture folder/logo.png" alt="">
+      </div>
+      <div class="prayer_timing"><a href="prayer_timing.html"><span>Prayer Timing</span></a></div>
     </div>
-</div>
+  </div>
 
-    <nav class="navbar navbar-expand-lg my_navbar">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent">
-                <span class="navbar_toggler_icon">
-                    <i class="fa fa-bars" style="font-size:36px; color: white;"></i>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse ul_div " id="navbarSupportedContent">
-                <ul class="navbar-nav  mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          News
-                        </a>
-                        <ul class="dropdown-menu my_navbar" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item drop-item-custom " href="karachi/city.html">Karachi</a></li>
-                          <li><a class="dropdown-item drop-item-custom" href="mumbai/city.html">Mumbai</a></li>
-                          <li><a class="dropdown-item drop-item-custom" href="dubai/city.html">Dubai</a></li>
-                          <li><a class="dropdown-item drop-item-custom" href="new_york/city.html">New York</a></li>
-                          <li><a class="dropdown-item drop-item-custom" href="istanbul/city.html">Istanbul</a></li>
-                        </ul>
-                      </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="politics_home.html">Politics</a>
-
-
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="sports_home.html">Sports</a>
+  <nav class="navbar navbar-expand-lg my_navbar">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar_toggler_icon">
+          <i class="fa fa-bars" style="font-size:36px; color: white;"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse ul_div " id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link " href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              News
+            </a>
+            <ul class="dropdown-menu my_navbar" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item drop-item-custom " href="karachi/city.html">Karachi</a></li>
+              <li><a class="dropdown-item drop-item-custom" href="mumbai/city.html">Mumbai</a></li>
+              <li><a class="dropdown-item drop-item-custom" href="dubai/city.html">Dubai</a></li>
+              <li><a class="dropdown-item drop-item-custom" href="new_york/city.html">New York</a></li>
+              <li><a class="dropdown-item drop-item-custom" href="istanbul/city.html">Istanbul</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="politics_home.html">Politics</a>
 
 
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="business-home.html">Business</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="sports_home.html">Sports</a>
 
 
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="entertainment_home.html">Entertainment</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="business-home.html">Business</a>
 
 
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="technology-home.html">Technology</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="entertainment_home.html">Entertainment</a>
 
 
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="health_home.html">Health</a>
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link current-tab" href="contact-us-demo.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about_us.html">About Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="technology-home.html">Technology</a>
 
 
-    </nav>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="health_home.html">Health</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link current-tab" href="contact-us-demo.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_us.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+  </nav>
   <div class="container mt-3">
-    <h1><b>Contact Us</b></h1><br>
-    <div class="row justify-content-center">
-  <div class="container-new">
-    <div class="content">
-      <div class="left-side">
-        <div class="address details">
-          <i class="fas fa-map-marker-alt"></i>
-          <div class="topic">Address</div>
-          <div class="text-one">5 Expressway, Off Korangi road</div>
-          <div class="text-two">Karachi, 75500</div>
+    <div class="row justify-content-center align-items-center>
+      <div class=" col col-lg-10 col-md-10 col-sm-12 col-12">
+      <h1><b>Contact Us</b></h1><br>
+      <div class="row justify-content-center mt-3 mb-3">
+        <div class="container-new p-4">
+          <div class="content">
+            <div class="left-side">
+              <div class="address details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Address</div>
+                <div class="text-one">5 Expressway, Off Korangi road</div>
+                <div class="text-two">Karachi, 75500</div>
+              </div>
+              <div class="phone details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="topic">Phone</div>
+                <div class="text-one">+0098 9893 5647</div>
+                <div class="text-two">+0096 3434 5678</div>
+              </div>
+              <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">mmohtasham322@gmail.com</div>
+                <div class="text-two">info.codinglab@gmail.com</div>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="topic-text">Send us a message</div>
+              <form action="#">
+                <div class="input-box">
+                  <input type="text" id="form_name" placeholder="Enter your name">
+
+
+                </div>
+                <span class="required_validation" id="validation1">*write your name*</span>
+                <div class="input-box">
+                  <input type="text" id="form_email" placeholder="Enter your email">
+
+                </div>
+                <span class="required_validation" id="validation2">*write your email*</span>
+                <span class="email_expression" id="email_expression_id">*write correct email*</span>
+                <span class="email_security">we will never share your email with anyone else</span>
+                <div class="input-box message-box">
+                  <textarea id="form_message" cols="30" rows="15" placeholder="write your message"></textarea>
+                </div>
+                <span class="required_validation" id="validation3">*write your message*</span>
+                <div class="button">
+                  <input type="button" value="Send Now" onclick="btnsend()">
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="phone details">
-          <i class="fas fa-phone-alt"></i>
-          <div class="topic">Phone</div>
-          <div class="text-one">+0098 9893 5647</div>
-          <div class="text-two">+0096 3434 5678</div>
+      </div><br><br>
+      <div class="row mt-5">
+        <h3><b>Please address any correspondence to:</b> </h3>
+        <span>The DNBC Office
+        </span><br>
+        <span>5 Expressway, Off Korangi road
+        </span><br>
+        <span>Karachi, 75500
+        </span><br>
+        <span>Pakistan
+        </span><br>
+        <span>The switchboard number for DNBC is: 111-397-737 or dialing from overseas +92-21-111-397-737 and
+          +92-21-358-000-51 to 58
+        </span>
+        <span><b>Fax Number:</b>35800050</span><br><br><br>
+
+
+        <span>Islamabad Bureau Office</span><br>
+        <span>15-1 & T Center</span><br>
+        <span>Khayabane Suharwardi, Abpara Road
+        </span>
+        <span>Islamabad</span>
+        <span>Phone: 051-2624820-7
+        </span><br><br><br>
+
+        <span>Lahore Bureau Office</span><br>
+        <span>Plot #229-A, Main FerozPur Road</span><br>
+        <span>Khayabane Suharwardi, Abpara Road
+        </span>
+        <span>Islamabad</span>
+        <span>Phone: 051-2624820-7
+        </span>
+      </div><br>
+      <div class="row">
+        <div class="col col-lg-6 col-md-12 col-sm-12 col-12 map-custom">
+          <p class="office-style">The DNBC office</p>
+          <iframe class="w-100"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8605.538137975025!2d67.03663142776469!3d24.925832100861584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1678947662828!5m2!1sen!2s"
+            width="500" height="400" style="border:0;" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         </div>
-        <div class="email details">
-          <i class="fas fa-envelope"></i>
-          <div class="topic">Email</div>
-          <div class="text-one">mmohtasham322@gmail.com</div>
-          <div class="text-two">info.codinglab@gmail.com</div>
+
+
+        <div class="col col-lg-6 col-md-12 col-sm-12 col-12 map-custom">
+          <p class="office-style">Islamabad Bureau Office</p>
+          <iframe class="w-100"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8605.538137975025!2d67.03663142776469!3d24.925832100861584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1678947662828!5m2!1sen!2s"
+            width="500" height="400" style="border:0;" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <div class="col col-lg-6 col-md-12 col-sm-12 col-12 map-custom">
+          <p class="office-style">Lahore Bureau Office</p>
+          <iframe class="w-100"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8605.538137975025!2d67.03663142776469!3d24.925832100861584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1678947662828!5m2!1sen!2s"
+            width="500" height="400" style="border:0;" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         </div>
       </div>
-      <div class="right-side">
-        <div class="topic-text">Send us a message</div>
-      <form action="#">
-        <div class="input-box">
-          <input type="text" id="form_name" placeholder="Enter your name">
-          
-
-        </div>
-        <span class="required_validation" id="validation1">*write your name*</span>
-        <div class="input-box">
-          <input type="text" id="form_email" placeholder="Enter your email">
-          
-        </div>
-        <span class="required_validation" id="validation2">*write your email*</span>
-              <span class="email_expression" id="email_expression_id">*write correct email*</span>
-              <span class="email_security">we will never share your email with anyone else</span>
-        <div class="input-box message-box">
-          <textarea id="form_message" cols="30" rows="15" placeholder="write your message"></textarea>
-        </div>
-        <span class="required_validation" id="validation3">*write your message*</span>
-        <div class="button">
-          <input type="button" value="Send Now" onclick="btnsend()" >
-        </div>
-      </form>
-    </div>
     </div>
   </div>
-    </div><br><br>
-  <div class="row">
-    <h3><b>Please address any correspondence to:</b> </h3>
-    <span>The DNBC Office
-    </span><br>
-    <span>5 Expressway, Off Korangi road
-    </span><br>
-    <span>Karachi, 75500
-    </span><br>
-    <span>Pakistan
-    </span><br>
-    <span>The switchboard number for DNBC is: 111-397-737 or dialing from overseas +92-21-111-397-737 and
-      +92-21-358-000-51 to 58
-    </span>
-    <span><b>Fax Number:</b>35800050</span><br><br><br>
-
-
-    <span>Islamabad Bureau Office</span><br>
-    <span>15-1 & T Center</span><br>
-    <span>Khayabane Suharwardi, Abpara Road
-    </span>
-    <span>Islamabad</span>
-    <span>Phone: 051-2624820-7
-    </span><br><br><br>
-
-    <span>Lahore Bureau Office</span><br>
-    <span>Plot #229-A, Main FerozPur Road</span><br>
-    <span>Khayabane Suharwardi, Abpara Road
-    </span>
-    <span>Islamabad</span>
-    <span>Phone: 051-2624820-7
-    </span>
-  </div><br>
-  <div class="row">
-    <div class="col col-lg-6 col-md-10 col-sm-10 col-10 map-custom">
-      <p class="office-style">The DNBC office</p>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8605.538137975025!2d67.03663142776469!3d24.925832100861584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1678947662828!5m2!1sen!2s"
-      width="500" height="400" style="border:0;"  loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
-      
-    </div>
-    
-    <div class="col col-lg-6 col-md-10 col-sm-10 col-10 map-custom">
-      <p class="office-style">Islamabad Bureau Office</p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8605.538137975025!2d67.03663142776469!3d24.925832100861584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1678947662828!5m2!1sen!2s"
-        width="500" height="400" style="border:0;"  loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-      </div>
-      <div class="col col-lg-6 col-md-10 col-sm-10 col-10 map-custom">
-        <p class="office-style">Lahore Bureau Office</p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8605.538137975025!2d67.03663142776469!3d24.925832100861584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1678947662828!5m2!1sen!2s"
-          width="500" height="400" style="border:0;"  loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-          
-        </div>
-    </div>
   </div>
-    </div>
   </div>
+  </div>
+  </div>
+
   <div class="container-fluid footer-container pt-5  ">
     <div class="row footer-row">
-        <div class="col col-lg-2 col-md-2 col-sm-3 col-4 footer-col-logo footer-each-col "><img
-                class="footer-logo" src="picture folder/logo.png" alt=""></div>
-        <div class="col col-lg-4 col-md-5 col-sm-6 col-6 footer-each-col">
-            
-            <ul class="navigation-items-ul">
-                <div class="row">
-                    <div class="col">
-                        <span class="footer-navigation-heading">Navigation</span><br><br>
-                        
-                        <li class="footer-navigation-item"><a href="politics_home.html" class="navigation-item-link">Politics</a></li>
-                        <li class="footer-navigation-item"><a href="sports_home.html" class="navigation-item-link">Sports</a></li>
-                        <li class="footer-navigation-item"><a href="business-home.html" class="navigation-item-link">Business</a></li>
-                        <li class="footer-navigation-item"><a href="entertainment_home.html" class="navigation-item-link">Entertainment</a></li>
-                        <li class="footer-navigation-item"><a href="technology-home.html" class="navigation-item-link">Technology</a></li>
-                        <li class="footer-navigation-item"><a href="health_home.html" class="navigation-item-link">Health</a></li>
-                        <li class="footer-navigation-item"><a href="contact-us-demo.html" class="navigation-item-link">Contact Us</a></li>
-                        <li class="footer-navigation-item"><a href="about_us.html" class="navigation-item-link">About Us</a></li>
-                    </div>
-                    <div class="col">
-                        <span class="footer-navigation-heading">News</span><br><br>
-                        <li class="footer-navigation-item"><a href="karachi/city.html" class="navigation-item-link">Karachi</a></li>
-                        <li class="footer-navigation-item"><a href="dubai/city.html" class="navigation-item-link">Dubai</a></li>
-                        <li class="footer-navigation-item"><a href="mumbai/city.html" class="navigation-item-link">Mumbai</a></li>
-                        <li class="footer-navigation-item"><a href="new_york/city.html" class="navigation-item-link">New York</a></li>
-                        <li class="footer-navigation-item"><a href="istanbul/city.html" class="navigation-item-link">Istanbul</a></li>
-                    </div>
-                </div>
-            </ul>
-        </div>
-        <div class="col col-lg-4 col-md-5 col-sm-12 col-12 footer-each-col">
-            <span class="footer-navigation-heading">Follow Us On</span><br><br>
-            <div class="social-icons-div">
-                <a href="https://www.facebook.com/m.mhashmi.54" class="social-icons" target="_blank">
-                    <div id="facebook"><i class="fa fa-facebook-f" style="font-size:36px"></i></div>
-                </a>
-                <a class="social-icons" href="https://wa.me/03226301906" target="blank">
-                    <div id="whatsapp"><i class="fa fa-whatsapp" style="font-size:36px"></i></div>
-                </a>
-                <a class="social-icons" href="https://twitter.com/Mohtasham322">
-                    <div id="twitter"><i class="fa fa-twitter" style="font-size:36px"></i></div>
-                </a>
-                <a class="social-icons" href="https://www.instagram.com/">
-                    <div id="instagram"><i class="fa fa-instagram" style="font-size:36px"></i></div>
-                </a>
-                <a class="social-icons" href="https://www.skype.com/en/">
-                    <div id="skype"><i class="fa fa-skype" style="font-size:36px"></i></div>
-                </a>
-            </div>
+      <div class="col col-lg-2 col-md-2 col-sm-3 col-4 footer-col-logo footer-each-col "><img class="footer-logo"
+          src="picture folder/logo.png" alt=""></div>
+      <div class="col col-lg-4 col-md-5 col-sm-6 col-6 footer-each-col">
 
+        <ul class="navigation-items-ul">
+          <div class="row">
+            <div class="col">
+              <span class="footer-navigation-heading">Navigation</span><br><br>
+
+              <li class="footer-navigation-item"><a href="politics_home.html" class="navigation-item-link">Politics</a>
+              </li>
+              <li class="footer-navigation-item"><a href="sports_home.html" class="navigation-item-link">Sports</a></li>
+              <li class="footer-navigation-item"><a href="business-home.html" class="navigation-item-link">Business</a>
+              </li>
+              <li class="footer-navigation-item"><a href="entertainment_home.html"
+                  class="navigation-item-link">Entertainment</a></li>
+              <li class="footer-navigation-item"><a href="technology-home.html"
+                  class="navigation-item-link">Technology</a></li>
+              <li class="footer-navigation-item"><a href="health_home.html" class="navigation-item-link">Health</a></li>
+              <li class="footer-navigation-item"><a href="contact-us-demo.html" class="navigation-item-link">Contact
+                  Us</a></li>
+              <li class="footer-navigation-item"><a href="about_us.html" class="navigation-item-link">About Us</a></li>
+            </div>
+            <div class="col">
+              <span class="footer-navigation-heading">News</span><br><br>
+              <li class="footer-navigation-item"><a href="karachi/city.html" class="navigation-item-link">Karachi</a>
+              </li>
+              <li class="footer-navigation-item"><a href="dubai/city.html" class="navigation-item-link">Dubai</a></li>
+              <li class="footer-navigation-item"><a href="mumbai/city.html" class="navigation-item-link">Mumbai</a></li>
+              <li class="footer-navigation-item"><a href="new_york/city.html" class="navigation-item-link">New York</a>
+              </li>
+              <li class="footer-navigation-item"><a href="istanbul/city.html" class="navigation-item-link">Istanbul</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="col col-lg-4 col-md-5 col-sm-12 col-12 footer-each-col">
+        <span class="footer-navigation-heading">Follow Us On</span><br><br>
+        <div class="social-icons-div">
+          <a href="https://www.facebook.com/m.mhashmi.54" class="social-icons" target="_blank">
+            <div id="facebook"><i class="fa fa-facebook-f" style="font-size:36px"></i></div>
+          </a>
+          <a class="social-icons" href="https://wa.me/03226301906" target="blank">
+            <div id="whatsapp"><i class="fa fa-whatsapp" style="font-size:36px"></i></div>
+          </a>
+          <a class="social-icons" href="https://twitter.com/Mohtasham322">
+            <div id="twitter"><i class="fa fa-twitter" style="font-size:36px"></i></div>
+          </a>
+          <a class="social-icons" href="https://www.instagram.com/">
+            <div id="instagram"><i class="fa fa-instagram" style="font-size:36px"></i></div>
+          </a>
+          <a class="social-icons" href="https://www.skype.com/en/">
+            <div id="skype"><i class="fa fa-skype" style="font-size:36px"></i></div>
+          </a>
         </div>
+
+      </div>
     </div>
-</div>
+  </div>
   <script src="bootstrap/js/bootstrap.min.js"></script>
 
 
   <script>
     function btnsend() {
-        var name_input = document.getElementById("form_name").value
-        var email_input = document.getElementById("form_email").value
-        var message_input = document.getElementById("form_message").value
-        var email_input_format = /^[A-z._]{3,}[0-9]{0,}@[A-z]{4,8}.[A-z]{2,4}$/;
-        var check_email_format = email_input_format.test(email_input);
+      var name_input = document.getElementById("form_name").value
+      var email_input = document.getElementById("form_email").value
+      var message_input = document.getElementById("form_message").value
+      var email_input_format = /^[A-z._]{3,}[0-9]{0,}@[A-z]{4,8}.[A-z]{2,4}$/;
+      var check_email_format = email_input_format.test(email_input);
 
 
-        if (name_input == "") {
-            document.getElementById("validation1").style.display = 'block'
-        }
-        else if (email_input == "") {
-            document.getElementById("validation2").style.display = 'block'
-            document.getElementById("validation1").style.display = 'none'
+      if (name_input == "") {
+        document.getElementById("validation1").style.display = 'block'
+      }
+      else if (email_input == "") {
+        document.getElementById("validation2").style.display = 'block'
+        document.getElementById("validation1").style.display = 'none'
 
 
-        }
-        else if (check_email_format == false) {
-            document.getElementById("email_expression_id").style.display = 'block'
-            document.getElementById("validation2").style.display = 'none'
-        }
-        else if (message_input == "") {
-            document.getElementById("validation3").style.display = 'block'
-            document.getElementById("validation2").style.display = 'none'
-            document.getElementById("email_expression_id").style.display = 'none'
+      }
+      else if (check_email_format == false) {
+        document.getElementById("email_expression_id").style.display = 'block'
+        document.getElementById("validation2").style.display = 'none'
+      }
+      else if (message_input == "") {
+        document.getElementById("validation3").style.display = 'block'
+        document.getElementById("validation2").style.display = 'none'
+        document.getElementById("email_expression_id").style.display = 'none'
 
-        }
+      }
 
-        else {
-            document.getElementById("email_expression_id").style.display = 'none'
-            document.getElementById("validation1").style.display = 'none'
-            document.getElementById("validation2").style.display = 'none'
-            document.getElementById("validation3").style.display = 'none'
-            alert("sent successfully")
-        }
-    }
-    function btnclose() {
-        var email_input = document.getElementById("form_email").value
-        var password_input = document.getElementById("form_password").value
-        var feedback_input = document.getElementById("form_feedback").value
-
+      else {
+        document.getElementById("email_expression_id").style.display = 'none'
         document.getElementById("validation1").style.display = 'none'
         document.getElementById("validation2").style.display = 'none'
         document.getElementById("validation3").style.display = 'none'
-        document.getElementById("email_expression_id").style.display = 'none'
-        document.getElementById("form_email").value = ""
-        document.getElementById("form_password").value = ""
-        document.getElementById("form_feedback").value = ""
+        alert("sent successfully")
+      }
+    }
+    function btnclose() {
+      var email_input = document.getElementById("form_email").value
+      var password_input = document.getElementById("form_password").value
+      var feedback_input = document.getElementById("form_feedback").value
+
+      document.getElementById("validation1").style.display = 'none'
+      document.getElementById("validation2").style.display = 'none'
+      document.getElementById("validation3").style.display = 'none'
+      document.getElementById("email_expression_id").style.display = 'none'
+      document.getElementById("form_email").value = ""
+      document.getElementById("form_password").value = ""
+      document.getElementById("form_feedback").value = ""
 
 
     }
 
-</script>
+  </script>
 </body>
+
 </html>
