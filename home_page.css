@@ -126,23 +126,17 @@ p{
 }
 
 
-/* @media screen and (max-width:990px) {
-    .ul_div {
-        display: flex;
-        justify-content: left;
-    }
-    .my_navbar{
-        width: fit-content !important;
-        height: fit-content;
-        position: absolute;
-    }
 
-} */
 
 .major_headlines {
     font-size: 30px;
     color: black;
 
+}
+@media screen and (max-width:499px){
+    .major_headlines{
+        font-size: 20px;
+    }
 }
 
 .mini_headlines {
@@ -318,6 +312,7 @@ p{
     margin: -140px auto 20%;
     background-color: white;
 }
+
 .politics_page_content {
     margin: -140px auto 20%;
     background-color: white;
@@ -706,6 +701,9 @@ color: white;
     .banner_entertainment, .banner_business, .banner_health, .banner_magazine, .banner_politics, .banner_sports,.banner_technology{
         height: 40vh;
     }
+    .magazines_page_content{
+        margin: 0px;
+    }
     
     .politics_page_content{
         margin: 0;
@@ -716,4 +714,5 @@ color: white;
         font-size: 50px;
     }
 }
+
 
