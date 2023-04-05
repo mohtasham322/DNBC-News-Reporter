@@ -622,16 +622,16 @@ p{
 }
 @keyframes shake{
     10%{
-        transform: rotate(15deg);
+        transform: rotate(20deg);
     }
     20%{
-        transform: rotate(-15deg);
+        transform: rotate(20deg);
     }
     30%{
-        transform: rotate(15deg);
+        transform: rotate(20deg);
     }
     40%{
-        transform: rotate(-15deg);
+        transform: rotate(20deg);
     }
 }
 .social-icons-div div i{
