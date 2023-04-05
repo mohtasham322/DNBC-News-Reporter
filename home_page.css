@@ -606,7 +606,33 @@ p{
     padding: 7px 12px;
     background-color: black;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 50%;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: 0.25s;
+}
+.social-icons-div div:hover{
+    outline: 4px solid black;
+    outline-offset: 2px;
+}
+.social-icons-div div:hover i{
+    animation: shake 0.25s;
+}
+.social-icons-div div i{
+    font-size: 23px !important;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
 }
 .social-icons-div div i{
 color: white;

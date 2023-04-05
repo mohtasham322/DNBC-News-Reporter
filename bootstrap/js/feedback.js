@@ -1,4 +1,3 @@
-
 var FeedbackData = [];
 function btnsend() {
     var email_input = document.getElementById("form_email").value
@@ -45,10 +44,10 @@ function btnsend() {
         alert("sent successfully")
 
         var obj = {
-            email : email_input,
-            password : password_input,
-            title:title_input,
-            feedback : feedback_input
+            email: email_input,
+            password: password_input,
+            title: title_input,
+            feedback: feedback_input
         }
         FeedbackData.push(obj);
         localStorage.setItem("feedback", JSON.stringify(FeedbackData));
@@ -73,15 +72,15 @@ function btnclose() {
 
 }
 GetFeedback();
-function GetFeedback(){
-var GetFeedbackData = JSON.parse(localStorage.getItem("feedback"));
-for (var i = 0; i < GetFeedbackData.length; i++) {
-var element = GetFeedbackData[i].email;
-var pass = GetFeedbackData[i].password;
-var title = GetFeedbackData[i].title;
-var feedback = GetFeedbackData[i].feedback;
-//    document.getElementById("feedback-div").innerHTML += feedback
+function GetFeedback() {
+    var GetFeedbackData = JSON.parse(localStorage.getItem("feedback"));
+    for (var i = 0; i < GetFeedbackData.length; i++) {
+        var element = GetFeedbackData[i].email;
+        var pass = GetFeedbackData[i].password;
+        var title = GetFeedbackData[i].title;
+        var feedback = GetFeedbackData[i].feedback;
+        //    document.getElementById("feedback-div").innerHTML += feedback
 
 
-}
+    }
 }
