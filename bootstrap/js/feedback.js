@@ -84,3 +84,29 @@ function GetFeedback() {
 
     }
 }
+
+
+function externalFunction() {
+   
+
+var date = new Date();
+
+// Get year, month, and day part from the date
+var year = date.toLocaleString("default", { year: "numeric" });
+var month = date.toLocaleString("default", { month: "2-digit" });
+var day = date.toLocaleString("default", { day: "2-digit" });
+
+// Generate yyyy-mm-dd date string
+var formattedDate = day + "-" + month + "-" + year;
+// console.log(formattedDate);  // Prints: 2022-05-04
+// document.write(formattedDate)
+document.getElementById("id_english_date").innerHTML = formattedDate
+var islamicdate = new Date();
+var islamicyear = islamicdate.toLocaleString("ar-SA", { year: "numeric" })
+var islamicday = islamicdate.toLocaleString("ar-SA", { day: "numeric" })
+var islamicmonth = islamicdate.toLocaleString("ar-SA", { month: "long" })
+// var islamicyear = islamicdate.toLocaleString("ar-SA",{year: "numeric"})
+var islamicdateformat = islamicday + "-" + islamicmonth + "-" + islamicyear;
+// document.write(islamicdateformat)
+document.getElementById("id_islamic_date").innerHTML = islamicdateformat
+  }
